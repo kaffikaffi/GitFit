@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 300px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #003761;
+        font-family: "Century Gothic";
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 298.654px;
+      }
+    </style>
+  </defs>
+  <text id="G" class="cls-1" x="373.026" y="607.853">G</text>
+  <text id="F" class="cls-2" transform="matrix(1.005, 0, 0, 1.005, 540.705, 713.811)">F</text>
+</svg>

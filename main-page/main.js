@@ -20,6 +20,7 @@ function renderHeader(ul,array,header){
     let a = document.createElement("a");
     a.textContent = element;
     a.setAttribute("href", element + ".html") //Fix so that it only uses lower-letters
+    a.setAttribute("class","nav_tags");
     li.appendChild(a); //is it even nessecary with a-tags? 
     ul.appendChild(li); // Fix Styling a-tags
   });

@@ -60,7 +60,7 @@ nav{
     margin: 10px;
     border-radius: 3px;
 }
-a{
+.nav_tags{
     text-decoration: none;
     color: #003761;
 }

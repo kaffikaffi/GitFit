@@ -30,23 +30,16 @@ ul input,textarea{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    
 	border:1px solid #BEBEBE;
 	padding: 7px;
     margin:0px;
-    outline: none;	
-
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
-	
+    outline: none;
 }
 ul input:focus, ul textarea:focus{
-	-moz-box-shadow: 0 0 8px #88D5E9;
-	-webkit-box-shadow: 0 0 8px #88D5E9;
-	box-shadow: 0 0 8px #88D5E9;
-	border: 1px solid #88D5E9;
+	-moz-box-shadow: 0 0 8px #4691A4;
+	-webkit-box-shadow: 0 0 8px #4691A4;
+	box-shadow: 0 0 8px #4691A4;
+	border: 1px solid #4691A4;
 }
 ul .field-divided{
 	width: 49%;
@@ -57,13 +50,13 @@ ul .field-long{
 ul .field-textarea{
 	height: 100px;
 }
-ul input[type=submit], ul input[type=button]{
+ul input[type=submit]{
 	background: #007163;
 	padding: 8px 15px 8px 15px;
 	border: none;
 	color: #fff;
 }
-ul input[type=submit]:hover, ul input[type=button]:hover{
+ul input[type=submit]:hover{
 	background: #4691A4;
 	box-shadow:none;
 	-moz-box-shadow:none;

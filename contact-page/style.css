@@ -1,0 +1,67 @@
+body{
+    width: 80%;
+    min-height: 700px;
+    background-color: black;
+    margin: auto;
+}
+form{
+    background-color: white;
+}
+ul {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+ul li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+ul label{
+	margin:0 0 3px 0;
+	padding: 0px;
+	display:block;
+	font-weight: bold;
+}
+ul input,textarea{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+    margin:0px;
+    outline: none;
+}
+ul input:focus, ul textarea:focus{
+	-moz-box-shadow: 0 0 8px #4691A4;
+	-webkit-box-shadow: 0 0 8px #4691A4;
+	box-shadow: 0 0 8px #4691A4;
+	border: 1px solid #4691A4;
+}
+ul .field-divided{
+	width: 49%;
+}
+ul .field-long{
+	width: 100%;
+}
+ul .field-textarea{
+	height: 100px;
+}
+ul input[type=submit]{
+	background: #007163;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+ul input[type=submit]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+#message{
+   resize: none;
+}

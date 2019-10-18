@@ -20,7 +20,6 @@ function renderHeader(ul,array,header){
     let a = document.createElement("a");
     a.textContent = element;
     a.setAttribute("href", element + ".html") //Fix so that it only uses lower-letters
-    a.setAttribute("class","nav_tags");
     li.appendChild(a); //is it even nessecary with a-tags? 
     ul.appendChild(li); // Fix Styling a-tags
   });
@@ -41,7 +40,7 @@ function createButton(string,id,place){
 // Slideshow start //
 let i = 0;
 const images = [];
-let time = 4000;
+let time = 8000;
 const imagetext = [];
 const dots = [];
 
@@ -61,18 +60,16 @@ dots[2] = "dot3"
 dots[3] = "dot4"
 
 
-
-
 function changeImg() {
   document.slide.src = images[i];
   document.getElementById("slide_caption").innerHTML = imagetext[i];
-  document.getElementById(dots[i]).style.backgroundColor = "red";
-  if (i >=1) {
-  document.getElementById(dots[i-1]).style.backgroundColor = "white";
-  document.getElementById(dots[i-2]).style.backgroundColor = "white";
-  document.getElementById(dots[i-3]).style.backgroundColor = "white";
-  document.getElementById(dots[i-4]).style.backgroundColor = "white";
+  changeBackgroundColor()
+
+  for (z = 0; z >= 100; z++) {
+    let opac = 1;
+    document.slide.style.opacity = opac - 0.01;
   }
+  
 
   if(i < images.length -1) {
     i++;
@@ -86,6 +83,13 @@ function changeImg() {
 
 window.onload = changeImg;
 
+function changeBackgroundColor() {
+  for (y = 0; y >= 0 && y < 4; y++) {
+    document.getElementById(dots[y]).style.backgroundColor = "white"
+    }
+    document.getElementById(dots[i]).style.backgroundColor = "#007163";
+}
+
 function nextImage() {
 
   if (i < images.length-1 && i >= 0) {
@@ -96,14 +100,7 @@ function nextImage() {
   }
   document.slide.src = images[i];
   document.getElementById("slide_caption").innerHTML = imagetext[i];
-  if (i>=1) {
-  document.getElementById(dots[i-1]).style.backgroundColor = "white";
-  }
-
-  else if (i != 3) {
-    document.getElementById(dots[3]).style.backgroundColor = "white";
-  }
-  document.getElementById(dots[i]).style.backgroundColor = "red";
+  changeBackgroundColor();
 }
 
 function prevImage() {
@@ -116,20 +113,14 @@ function prevImage() {
   }
   document.slide.src = images[i];
   document.getElementById("slide_caption").innerHTML = imagetext[i];
-  if (i>=1) {
-    document.getElementById(dots[i+1]).style.backgroundColor = "white";
-    }
-  
-    else if (i != 0) {
-      document.getElementById(dots[0]).style.backgroundColor = "white";
-    }
-    document.getElementById(dots[i]).style.backgroundColor = "red";
+  changeBackgroundColor();
 }
 
 function changeDot1() {
   i = 0;
   document.slide.src = images[i];
   document.getElementById("slide_caption").innerHTML = imagetext[i];
+  changeBackgroundColor();
   
   
 }
@@ -137,18 +128,20 @@ function changeDot2() {
   i = 1;
   document.slide.src = images[i];
   document.getElementById("slide_caption").innerHTML = imagetext[i];
-
+  changeBackgroundColor();
 }
 function changeDot3() {
   i = 2;
   document.slide.src = images[i];
   document.getElementById("slide_caption").innerHTML = imagetext[i];
+  changeBackgroundColor();
 
 }
 function changeDot4() {
   i = 3;
   document.slide.src = images[i];
   document.getElementById("slide_caption").innerHTML = imagetext[i];
+  changeBackgroundColor();
 
 }
 

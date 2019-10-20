@@ -3,6 +3,7 @@ const FOOTER_ELEMENT = document.getElementById("footer");
 const UL_ELEMENT = document.getElementById("nav-ul");
 const MAIN_SECTION = document.getElementById("main");
 const LOGIN_DIV = document.getElementById("login-container");
+const BURGER_MENU = document.getElementById("hamburger-menu");
 
 //Where should global variables be declared? 
 
@@ -36,4 +37,3 @@ function createButton(string,id,place){
   btn.textContent = string;
   place.appendChild(btn);
 }
-

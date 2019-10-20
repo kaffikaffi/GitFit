@@ -1,19 +1,36 @@
-
-
-
-body{
+html,body{
+    margin: 0;
+    padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
+    z-index: 100;
     font-size: 20px;
     display: flex;
     width: 100%;
-    max-height: 10%;
+    height: 55px;
     position: fixed;
     top: 0;
     left: 0;
     box-shadow:  0px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    background-color: white;
 }
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+footer{
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: green;
+  }
+
+/* Navigation bar*/
 ul{
     display: flex;
     flex-direction: row;
@@ -87,5 +104,82 @@ a{
         margin: 6px 0;
         transition: 0.4s;
     }
+<<<<<<< HEAD
   }
 
+=======
+}
+/* Slideshow */
+#slideshow{
+    width: 100%;
+    height: 300px;
+    background-color: #003761;
+}
+#slideshow_container {
+    width: 100%;
+    height: 100%;
+    
+}
+#slide_img {
+width: 100%;
+height: auto;
+}
+.slide_btn {
+    height: 20px;
+    margin: auto;
+}
+#slide_btns_container {
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#slide_caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 64px;
+
+}
+#slide_img {
+    width: 100%;
+}
+
+#slide_dots {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+#dot1, #dot2, #dot3, #dot4 {
+    height: 18px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+>>>>>>> 281f987a4d5ee0d47a0ede7659ad0eee4240f49f

@@ -10,23 +10,45 @@
 </head>
 
 <body>
-    <header id="header">
-        <img src="../img/gitfit-slogo.svg" width="100px" height="100px" id="logo-image" alt="Company logo">
-        <nav id="nav">
-            <ul id="nav-ul"></ul>
-            <div id="login-container"></div>
-        </nav>
-        <div id="hamburger-menu">
-            <div class="bar" id="bar1"></div>
-            <div class="bar" id="bar2"></div>
-            <div class="bar" id="bar3"></div>
-        </div>
-    </header>
-    <section id="main">
-        <div id="tile-container"></div>
-    </section>
-    <footer id="footer"></footer>
-    <script src="main.js"></script>
+        <header id="header">
+            <img src="../img/gitfit-slogo.svg" width="100px" height="100px" id="logo-image" alt="Company logo">
+            <nav id="nav">
+                <ul id="nav-ul"></ul>
+                <div id="login-container"></div>
+            </nav>
+            <div id="hamburger-menu">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+        </header>
+        <main>
+            <section id="slideshow">
+                <div id="slideshow_container">
+                    
+                        <img name="slide" id="slide_img">
+                        <h1 name="slide_text" id="slide_caption"></h1>
+                    <div id="slide_btns_container">
+                        <input type="image" src="../img/leftarrow.png" onclick="(prevImage())" class="slide_btn">
+                        <input type="image" src="../img/rightarrow.png" onclick="(nextImage())" class="slide_btn">
+                    </div>
+                    <div id="slide_dots">
+                        <button onclick="(changeDot1())" id="dot1" class="dotx"></button>
+                        <button onclick="(changeDot2())" id="dot2" class="dotx"></button>
+                        <button onclick="(changeDot3())" id="dot3" class="dotx"></button>
+                        <button onclick="(changeDot4())" id="dot4" class="dotx"></button>
+                    </div>
+                    
+                </div>
+            </section>
+
+
+            <div id="tile-container"></div>
+        </main>
+        <footer id="footer">
+            <p>This is a footer</p>
+        </footer>
+        <script src="main.js"></script>
 </body>
 
 </html>

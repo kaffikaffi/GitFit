@@ -42,7 +42,7 @@ function createButton(string,id,place){
 // Slideshow start //
 let i = 0;
 const images = [];
-let time = 8000;
+let time = 5000;
 const imagetext = [];
 const dots = [];
 
@@ -51,10 +51,10 @@ images[1] = "../img/exampleimg2.jpg";
 images[2] = "../img/exampleimg3.jpg";
 images[3] = "../img/exampleimg4.jpg";
 
-imagetext[0] = "Velkommen";
-imagetext[1] = "VelkommenVelkommen";
-imagetext[2] = "VelkommenVelkommenVelkommen";
-imagetext[3] = "VelkommenVelkommenVelkommenVelkommen";
+imagetext[0] = "Velkommen1";
+imagetext[1] = "Velkommen2";
+imagetext[2] = "Velkommen3";
+imagetext[3] = "Velkommen4";
 
 dots[0] = "dot1"
 dots[1] = "dot2"

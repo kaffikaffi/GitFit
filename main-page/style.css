@@ -31,13 +31,13 @@ footer{
   }
 
 /* Navigation bar*/
-ul{
+.nav-ul{
     display: flex;
     flex-direction: row;
     justify-content: left;
     flex-grow: 1;
 }
-li{
+.nav-li{
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
@@ -85,6 +85,8 @@ a{
     display: none;
     background-color: black;
 }
+
+/* Breakpoint header */ 
 @media screen and (max-width: 822px) {
     #login_btn,#register_btn,a{
         display: none;
@@ -104,10 +106,6 @@ a{
         margin: 6px 0;
         transition: 0.4s;
     }
-<<<<<<< HEAD
-  }
-
-=======
 }
 /* Slideshow */
 #slideshow{
@@ -182,4 +180,3 @@ height: auto;
     border: 1px solid black;
     cursor: pointer;
 }
->>>>>>> 281f987a4d5ee0d47a0ede7659ad0eee4240f49f

@@ -18,6 +18,7 @@ let nav_array = [
 function renderHeader(ul,array,header){
   array.forEach(element => {
     let li = document.createElement("li");
+    li.setAttribute("class", "nav-li");
     let a = document.createElement("a");
     a.textContent = element;
     a.setAttribute("href", element + ".html") //Fix so that it only uses lower-letters
@@ -36,9 +37,6 @@ function createButton(string,id,place){
   btn.setAttribute("id", id);
   btn.textContent = string;
   place.appendChild(btn);
-<<<<<<< HEAD
-}
-=======
 }
 
 // Slideshow start //
@@ -103,7 +101,7 @@ function nextImage() {
     i=0;
   }
   document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i];
+  document.getElementById("slide_caption").innerHTML = imagetext[i]; //innerHTML? 
   changeBackgroundColor();
 }
 
@@ -153,4 +151,3 @@ function changeDot4() {
 
 
 //slideshow end //
->>>>>>> 281f987a4d5ee0d47a0ede7659ad0eee4240f49f

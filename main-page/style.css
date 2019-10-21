@@ -1,27 +1,43 @@
-
-
-
-body{
+html,body{
+    margin: 0;
+    padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 header{
+    z-index: 100;
     font-size: 20px;
     display: flex;
     width: 100%;
-    max-height: 10%;
+    height: 55px;
     position: fixed;
     top: 0;
     left: 0;
     box-shadow:  0px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    background-color: white;
 }
-ul{
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+footer{
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: green;
+  }
+
+/* Navigation bar*/
+.nav-ul{
     display: flex;
     flex-direction: row;
     justify-content: left;
     flex-grow: 1;
 }
-li{
+.nav-li{
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
@@ -69,6 +85,8 @@ a{
     display: none;
     background-color: black;
 }
+
+/* Breakpoint header */ 
 @media screen and (max-width: 822px) {
     #login_btn,#register_btn,a{
         display: none;
@@ -89,24 +107,25 @@ a{
         transition: 0.4s;
     }
 }
-
+/* Slideshow */
+#slideshow{
+    width: 100%;
+    height: 300px;
+    background-color: #003761;
+}
 #slideshow_container {
     width: 100%;
-    height: 500px;
-    position: relative;
+    height: 100%;
     
 }
 #slide_img {
 width: 100%;
-height: 500px;
-
+height: auto;
 }
-
 .slide_btn {
     height: 20px;
     margin: auto;
 }
-
 #slide_btns_container {
 
     position: absolute;

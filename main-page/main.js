@@ -3,6 +3,7 @@ const FOOTER_ELEMENT = document.getElementById("footer");
 const UL_ELEMENT = document.getElementById("nav-ul");
 const MAIN_SECTION = document.getElementById("main");
 const LOGIN_DIV = document.getElementById("login-container");
+const BURGER_MENU = document.getElementById("hamburger-menu");
 
 //Where should global variables be declared? 
 
@@ -17,6 +18,7 @@ let nav_array = [
 function renderHeader(ul,array,header){
   array.forEach(element => {
     let li = document.createElement("li");
+    li.setAttribute("class", "nav-li");
     let a = document.createElement("a");
     a.textContent = element;
     a.setAttribute("href", element + ".html") //Fix so that it only uses lower-letters
@@ -99,7 +101,7 @@ function nextImage() {
     i=0;
   }
   document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i];
+  document.getElementById("slide_caption").innerHTML = imagetext[i]; //innerHTML? 
   changeBackgroundColor();
 }
 

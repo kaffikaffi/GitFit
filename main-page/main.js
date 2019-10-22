@@ -40,114 +40,49 @@ function createButton(string,id,place){
 }
 
 // Slideshow start //
-let i = 0;
-const images = [];
-let time = 5000;
-const imagetext = [];
-const dots = [];
+const images = [
+  "../img/exampleimg1.jpg",
+  "../img/exampleimg2.jpg",
+  "../img/exampleimg3.jpg",
+  "../img/exampleimg4.jpg"
+];
 
-images[0] = "../img/exampleimg1.jpg";
-images[1] = "../img/exampleimg2.jpg";
-images[2] = "../img/exampleimg3.jpg";
-images[3] = "../img/exampleimg4.jpg";
+const imagetext = [
+  "Velkommen1",
+  "Velkommen2",
+  "Velkommen3",
+  "Velkommen4"
+];
 
-imagetext[0] = "Velkommen1";
-imagetext[1] = "Velkommen2";
-imagetext[2] = "Velkommen3";
-imagetext[3] = "Velkommen4";
+const dots = [
+  "dot1",
+  "dot2",
+  "dot3",
+  "dot4"
+];
 
-dots[0] = "dot1"
-dots[1] = "dot2"
-dots[2] = "dot3"
-dots[3] = "dot4"
+const time = 5000;
+let prevImg = 0;
+let timeouts = []
 
+function changeImg(index) {
+  for(i in timeouts) [
+    clearTimeout(i)
+  ]
 
-function changeImg() {
-  document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i];
-  changeBackgroundColor()
-
-  for (z = 0; z >= 100; z++) {
-    let opac = 1;
-    document.slide.style.opacity = opac - 0.01;
+  if(index > images.length -1) {
+    index = 0;
   }
-  
 
-  if(i < images.length -1) {
-    i++;
-  }
-  else {
-    i = 0;
-  }
-  setTimeout("changeImg()", time);
+  document.getElementById("slide_img").src = images[index];
+  document.getElementById("slide_caption").innerHTML = imagetext[index];
+  document.getElementById(dots[prevImg]).style.backgroundColor = "white";
+  document.getElementById(dots[index]).style.backgroundColor = "#007163";
 
+  prevImg = index;
+  let timeout = window.setTimeout("changeImg(prevImg + 1)", time);
+  timeouts.push(timeout)
 }
 
-window.onload = changeImg;
-
-function changeBackgroundColor() {
-  for (y = 0; y >= 0 && y < 4; y++) {
-    document.getElementById(dots[y]).style.backgroundColor = "white"
-    }
-    document.getElementById(dots[i]).style.backgroundColor = "#007163";
-}
-
-function nextImage() {
-
-  if (i < images.length-1 && i >= 0) {
-    i++;
-  }
-  else {
-    i=0;
-  }
-  document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i]; //innerHTML? 
-  changeBackgroundColor();
-}
-
-function prevImage() {
-
-  if(i > 0 && i <= images.length-1) {
-    i--;
-  }
-  else {
-    i=images.length-1
-  }
-  document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i];
-  changeBackgroundColor();
-}
-
-function changeDot1() {
-  i = 0;
-  document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i];
-  changeBackgroundColor();
-  
-  
-}
-function changeDot2() {
-  i = 1;
-  document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i];
-  changeBackgroundColor();
-}
-function changeDot3() {
-  i = 2;
-  document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i];
-  changeBackgroundColor();
-
-}
-function changeDot4() {
-  i = 3;
-  document.slide.src = images[i];
-  document.getElementById("slide_caption").innerHTML = imagetext[i];
-  changeBackgroundColor();
-
-}
-
-
-
-
+changeImg(0)
 //slideshow end //

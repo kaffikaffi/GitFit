@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Max Pulse</title>
+</head>
+<body>
+    <h1>Max Pulse Calculator</h1>
+
+    <h3>How old are you?</h3>
+    <input type = "number" id = "age_input" class = "maxpulse_input"><br><br>
+
+    <input type = "submit" id = "maxpulse_btn" value="Check my maxpulse">
+    <p id = "maxpulse_output">Your max pulse is: </p>
+    <p>The formula used: 206.9 - (0.67 x age) from USA researchers, Jackson et al. (2007)</p>
+
+
+    <h2>Are you a well trained athlete? Use this calculator instead for active athletes</h2>
+
+    <h3>how old are you?</h3>
+    <input type = "number" id = "age_input2" class = "maxpulse_input">
+
+    <h3>Gender</h3>
+    <input type ="radio" name ="maxpulse_gender" class = "gender_maxpulse" value = "male">Male
+    <input type ="radio" name ="maxpulse_gender" class = "gender_maxpulse" value = female>Female<br><br>
+
+    <input type = "submit" id = "maxpulse_btn2" value = "check my maxpulse">
+
+    <p id = "maxpulse_output2">Your max pulse is: </p>
+
+
+    <script src="maxpulse.js"></script>
+    
+</body>
+</html>

@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Bmi calculator</title>
 </head>
 <body>
+    <h1>Bmi calculators</h1>
     
+    <h2>Weight in kg</h2>
+    <input type = "number" class ="bmi_input" placeholder="Weight" id="weight_input">
+
+    <h2>height in cm</h2>
+    <input type = "number" class="bmi_input" placeholder ="Height" id="height_input">
+
+    <h2>Gender</h2>
+    <input type ="radio" class = "gender_bmi_input" name = "gender" checked>Male
+    <input type ="radio" class = "gender_bmi_input" name = "gender">Female
+    <br>
+    <br>
+
+    <input type = "submit" id = "submit_bmi" value = "Check my BMI">
+
+    <p id ="bmi_output">Your BMI is:</p>
+    <p id ="bmi_output_def">That makes you: </p>
+
+
+    <script src="bmi.js"></script>
+
 </body>
 </html>

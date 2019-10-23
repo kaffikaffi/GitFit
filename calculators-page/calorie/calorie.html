@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>Calculate your calorie intake</h3>
+            <input type="radio" name="gender" id="gender_female" value = "female" ><span>Female:</span>
+            <input type="radio" name="gender" id="gender_male" value="male" ><span>Male:</span>
+            <br>
+            <input type="number" id="input_weight" min="1" placeholder="Weight">
+            <br>
+            <input type="number" id="input_height" min="1" placeholder="Height">
+            <br>
+            <input type="number" id="input_age" min="1" placeholder="Age">
+            <br>
+            <span>Choose your activity level:</span>
+            <select id="input_activity">
+                <option value="1">Less than three times per week</option>
+                <option value="2">Three to five times per week</option>
+                <option value="3">More than five times per week</option>
+            </select>
+            <br>
+            <button id="btn_calculate">Calculate</button>
+            <br/>
+            <p id="output"></p>
+        
+        </section>
+
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

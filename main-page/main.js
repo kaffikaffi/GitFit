@@ -46,3 +46,71 @@ function changeImg(index) {
 
 changeImg(0)
 //slideshow end //
+
+//tile rendering start //
+// tile rendering // 
+const TILE_DIV = document.getElementById("tile-container");
+
+let tile_array = [
+  tile1 = {
+    name: "tips",
+    display: "Find the best tips",
+    src: "../tips-page/tips.html",
+    img: "../img/tips-tile.png"
+  },
+  tile2 = {
+    name: "calcualtors",
+    display:"Calculate your goals",
+    src: "../calculator-page/main-calculator.html",
+    img: "../img/calculator-tile.png"
+  },
+  tile3 = {
+    name: "library",
+    display:"The best exercises",
+    src: "../library-page/library.html",
+    img: "../img/library-tile.png"
+  },
+  tile4= {
+    name: "supplements",
+    display:"What supplements to use",
+    src: "../supplement-page/supplement.html",
+    img: "../img/supplement-tile.png"
+  },
+  tile5 = {
+    name: "program",
+    display:"Generate program",
+    src: "../program-page/program.html",
+    img: "../img/program-tile.png"
+  },
+  tile6 = {
+    name: "register",
+    display:"Register now",
+    src: "../register-page/register.html",
+    img: "../img/register-tile.png"
+  }
+];
+
+function createTile(array) {
+    array.forEach(element => {
+      let tile = document.createElement("div");
+      tile.setAttribute("class", "tile-style");
+      tile. setAttribute("href", element.src)
+      //tile.style.backgroundImage = "url(" + `${element.img}` + ")";
+
+      let image = document.createElement("img");
+      image.setAttribute("class", "tile-image");
+      image.setAttribute("src", element.img);  
+      
+      tile.appendChild(image);
+      let display = document.createElement("h3");
+      display.setAttribute("class", "tile-header");
+      display.textContent = element.display;
+      tile.appendChild(display);
+      TILE_DIV.appendChild(tile);
+    });
+    console.log(tile_array);
+  }
+
+createTile(tile_array);
+
+//tile rendering end

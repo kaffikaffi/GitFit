@@ -24,25 +24,19 @@
         </header>
         <main>
             <section id="slideshow">
-                <div id="slideshow_container">
-                    
+                <div id="slideshow_container">                   
                         <img name="slide" id="slide_img">
                         <h1 name="slide_text" id="slide_caption"></h1>
-                    <div id="slide_btns_container">
-                        <input type="image" src="../img/leftarrow.png" onclick="(prevImage())" class="slide_btn"> <!-- input type image?-->
-                        <input type="image" src="../img/rightarrow.png" onclick="(nextImage())" class="slide_btn">
-                    </div>
+                        <img type="image" src="../img/leftarrow.svg" onclick="(changeImg(prevImg-1))" class="slide_btn" id="slide_btn_left">
+                        <img type="image" src="../img/rightarrow.svg" onclick="(changeImg(prevImg+1))" class="slide_btn" id="slide_btn_right">
                     <div id="slide_dots">
-                        <button onclick="(changeDot1())" id="dot1" class="dotx"></button> <!-- Løse dette på en annen måte?-->
-                        <button onclick="(changeDot2())" id="dot2" class="dotx"></button>
-                        <button onclick="(changeDot3())" id="dot3" class="dotx"></button>
-                        <button onclick="(changeDot4())" id="dot4" class="dotx"></button>
-                    </div>
-                    
+                        <button onclick="(changeImg(0))" id="dot1" class="dotx"></button> <!-- Løse dette på en annen måte?-->
+                        <button onclick="(changeImg(1))" id="dot2" class="dotx"></button>
+                        <button onclick="(changeImg(2))" id="dot3" class="dotx"></button>
+                        <button onclick="(changeImg(3))" id="dot4" class="dotx"></button>
+                    </div>                   
                 </div>
             </section>
-
-
             <div id="tile-container"></div>
         </main>
         <footer id="footer">
@@ -51,5 +45,4 @@
         <script src="header.js"></script>
         <script src="main.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,9 @@
+body{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+}
+section{
+    background-color: royalblue;
+}

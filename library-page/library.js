@@ -1,41 +1,41 @@
-let exercises = document.getElementById("exercises");
-let mediaFiles = {
-    "exampleimg1.jpg":["chest", "shoulders", "legs"],
-    "exampleimg2.jpg":["shoulders", "legs"],
-    "exampleimg3.jpg":["legs"],
-    "exampleimg4.jpg":["back", "arms", "core"]
-};
+let exerciseList = document.getElementById("exercises");
 
-function updateList() {
-    let filter = [];
-    let newElements = [];
-    
-    if(document.getElementById("chest").checked == true) {filter.push("chest")};
-    if(document.getElementById("shoulders").checked == true) {filter.push("shoulders")};
-    if(document.getElementById("legs").checked == true) {filter.push("legs")};
-    if(document.getElementById("back").checked == true) {filter.push("back")};
-    if(document.getElementById("arms").checked == true) {filter.push("arms")};
-    if(document.getElementById("core").checked == true) {filter.push("core")};
-    exercises.innerHTML = "";
+let filterOptions = ["chest", "shoulders", "legs", "back", "arms", "core"];
 
-    for(i in mediaFiles) {
-        for(j of filter) {
-            if(mediaFiles[i].includes(j)) { 
-                source = "../img/" + i;
-                if(!(newElements.includes(source))) {
-                    newElements.push(source);
-                }
+let categories = [
+    ["chest", "shoulders", "legs"],
+    ["shoulders", "legs"],
+    ["legs"],
+    ["back", "arms", "core"]
+];
+
+let exerciseIds = [
+    "exercise1",
+    "exercise2",
+    "exercise3",
+    "exercise4"
+];
+
+function updateList(e) {
+    let category = e.target.id;
+    if(e.target.checked) {
+        for(i of categories) {
+            if(i.includes(category)) {
+                let index = categories.indexOf(i);
+                document.getElementById(exerciseIds[index]).style.display = "inline";
+            }
+        }
+    } else {
+        console.log(e.target.checked)
+        for(i of categories) {
+            if(i.includes(category)) {
+                let index = categories.indexOf(i);
+                document.getElementById(exerciseIds[index]).style.display = "none";
             }
         }
     }
+}
 
-    for(i of newElements) {
-        let container = document.createElement("div");
-        container.className = "container";
-        let image = document.createElement("img");
-        image.className = "media";
-        image.src = i;
-        container.appendChild(image);
-        exercises.appendChild(container);
-    }
+for(i of filterOptions) {
+    document.getElementById(i).addEventListener("input", updateList);
 }

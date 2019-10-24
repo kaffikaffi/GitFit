@@ -1,0 +1,117 @@
+body{
+    width: 80%;
+    min-height: auto;
+    margin: auto;
+}
+#bmi_list {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+ul li {
+	padding: 0;
+	display: block;
+	list-style: none;
+}
+ul label{
+	margin:0 0 3px 0;
+	padding: 0px;
+	display:block;
+	font-weight: bold;
+}
+ul input,textarea{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+    margin:0px;
+    outline: none;
+}
+ul input:focus, ul textarea:focus{
+	-moz-box-shadow: 0 0 8px #4691A4;
+	-webkit-box-shadow: 0 0 8px #4691A4;
+	box-shadow: 0 0 8px #4691A4;
+	border: 1px solid #4691A4;
+}
+ul input[type=submit]{
+	background: #007163;
+	padding: 8px 15px 8px 15px;
+	border: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+ul input[type=submit]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+h1 {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+h2 {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+#undertext {
+    margin: auto;
+    max-width: 400px;
+}
+#bmi_output, #bmi_output_def {
+    font-size: 130%;
+    font-weight: 130%;
+    margin-bottom: 0px;
+
+}
+table {
+    width: auto;
+    border: 2px solid black;
+    margin: auto;
+    margin-bottom: 5%;
+}
+td,th {
+    border: 1px solid black;
+    width: 24%;
+    height: 50px;
+    font-size: 120%;
+}
+.healthy {
+    background-color: #007163;
+    border-bottom: solid 1px black;
+    padding: 10px 10px;
+    
+}
+.unhealthy {
+    background-color: #4691A4;
+    border-bottom: solid 1px black;
+    padding: 10px 10px;
+    
+}
+.obese {
+    background-color: rgb(45, 63, 230);
+    border-bottom: solid 1px black;
+    padding: 10px 10px;
+    
+}
+p {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+h3 {
+    margin-top: 0px;
+}
+#categories {
+    border:solid 2px black;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+}

@@ -8,13 +8,26 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
-        <h3></h3>
-        <input type="number" id="input_weight" class="input" placeholder="weight" min="1">
-        <input type="number" id="input_reps" class="input" placeholder="reps" min="1">
-        <button id="btn_calculate">Calculate</button>
-        <input type="text" id="input_1rm" class="input" readonly>
-    </section>
+    <main>
+        <section>
+            <ul id="list_1rm">
+                <h3></h3>
+                <li>
+                    <input type="number" id="input_weight" class="input" placeholder="weight" min="1">
+                </li>
+                <li>
+                    <input type="number" id="input_reps" class="input" placeholder="reps" min="1">
+                </li>
+                <li>
+                    <button id="btn_calculate">Calculate</button>
+                </li>
+                <li>
+                    <p id="output_1rm"></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,3 +3,38 @@ body{
     font-size: 18px;
     color: black;
 }
+main{
+    width: 80%;
+}
+#list_calorie{
+    margin:10px auto;
+    width: auto;
+    height: auto;
+	padding: 20px 12px 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+option{
+    background-color: #4691A4;
+    color: white;
+}
+#list_calorie li{
+    padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 10px 0;
+}
+#list_calorie li select{
+    margin-top: 5px;
+}
+#list_calorie input,select{
+    box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+    margin:0px;
+    outline: none;
+}
+#list_calorie input:focus,#list_calorie select:focus{
+    box-shadow: 0 0 8px #4691A4;
+	border: 1px solid #4691A4;
+}

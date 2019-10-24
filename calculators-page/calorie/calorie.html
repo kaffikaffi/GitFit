@@ -11,26 +11,33 @@
     <main>
         <section>
             <h3>Calculate your calorie intake</h3>
-            <input type="radio" name="gender" id="gender_female" value = "female" ><span>Female:</span>
-            <input type="radio" name="gender" id="gender_male" value="male" ><span>Male:</span>
-            <br>
-            <input type="number" id="input_weight" min="1" placeholder="Weight">
-            <br>
-            <input type="number" id="input_height" min="1" placeholder="Height">
-            <br>
-            <input type="number" id="input_age" min="1" placeholder="Age">
-            <br>
-            <span>Choose your activity level:</span>
-            <select id="input_activity">
-                <option value="1">Less than three times per week</option>
-                <option value="2">Three to five times per week</option>
-                <option value="3">More than five times per week</option>
-            </select>
-            <br>
-            <button id="btn_calculate">Calculate</button>
-            <br/>
-            <p id="output"></p>
-        
+            <ul id="list_calorie">
+                <li>
+                    <span>Female:</span><input type="radio" name="gender" id="gender_female" value = "female" >
+                    <span>Male:</span><input type="radio" name="gender" id="gender_male" value="male" >
+                </li>
+                <li>
+                    <input type="number" id="input_weight" min="1" placeholder="Weight">
+                </li>
+                <li>
+                    <input type="number" id="input_height" min="1" placeholder="Height">
+                </li>
+                <li>
+                    <input type="number" id="input_age" min="1" placeholder="Age">
+                </li>
+                <li>
+                    <span>Choose your activity level:</span><br>
+                    <select id="input_activity">
+                        <option value="1">Less than three times per week</option>
+                        <option value="2">Three to five times per week</option>
+                        <option value="3">More than five times per week</option>
+                    </select>
+                </li>
+                <li>
+                    <button id="btn_calculate">Calculate</button>
+                </li>
+                    <p id="output"></p>
+            </ul>
         </section>
 
     </main>

@@ -21,17 +21,13 @@ const dots = [
   "dot4"
 ];
 
-const time = 5000;
+const time = 6969;
 let prevImg = 0;
-let timeouts = []
+let timeout;
 
 function changeImg(index) {
-  for(i in timeouts) [
-    clearTimeout(i)
-  ]
-
-  if(index > images.length -1) {
-    index = 0;
+  if(index >= images.length || index < 0) {
+    index = images.length - Math.abs(index);
   }
 
   document.getElementById("slide_img").src = images[index];
@@ -40,11 +36,11 @@ function changeImg(index) {
   document.getElementById(dots[index]).style.backgroundColor = "#007163";
 
   prevImg = index;
-  let timeout = window.setTimeout("changeImg(prevImg + 1)", time);
-  timeouts.push(timeout)
+  clearTimeout(timeout);
+  timeout = setTimeout("changeImg(prevImg+1)", time);
 }
 
-changeImg(0)
+changeImg(0);
 //slideshow end //
 
 //tile rendering start //

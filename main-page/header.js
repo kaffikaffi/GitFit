@@ -38,3 +38,13 @@ function createButton(string,id,place){
   btn.textContent = string;
   place.appendChild(btn);
 }
+ const activeNav = () => {
+   const burger = document.getElementById("hamburger-menu");
+   const nav = document.querySelector('.nav-ul');
+   burger.addEventListener("click", () => {
+      nav.classList.toggle('nav-ul-motion');
+      UL_ELEMENT.appendChild(LOGIN_DIV);
+      LOGIN_DIV.style.display = "flex";
+   });
+ }
+ activeNav()

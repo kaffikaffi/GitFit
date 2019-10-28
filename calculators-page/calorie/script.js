@@ -39,11 +39,14 @@ function calculateCalories(){
         else{
              activityNumber = 1.48;
         }
-        totalCalories = caloriesMale * activityNumber;    
+        totalCalories = Math.round(caloriesMale * activityNumber);    
     }
 
- 
-    console.log(totalCalories);
-    document.getElementById("output").innerHTML = totalCalories;
+
+    document.getElementById("loose_05").innerHTML = (totalCalories-250)
+    document.getElementById("loose_1").innerHTML = (totalCalories-500)
+    document.getElementById("maintain").innerHTML = (totalCalories)
+    document.getElementById("gain_05").innerHTML = (totalCalories+250)
+    document.getElementById("gain_1").innerHTML = (totalCalories+500)
    
 }

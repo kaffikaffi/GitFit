@@ -38,3 +38,20 @@ option{
     box-shadow: 0 0 8px #4691A4;
 	border: 1px solid #4691A4;
 }
+table{
+    border: solid 5px #4691A4;
+    width: auto;
+    height: auto;
+    border-collapse: collapse;
+}
+tbody tr,tbody th{
+    text-align: left;
+}
+tbody th,thead th{
+    border-bottom: solid 2px;
+    padding: 15px;
+}
+tbody tr:hover{
+    background-color: #007163;
+    color: white;
+}

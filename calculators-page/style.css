@@ -8,6 +8,7 @@
     text-align: center;
     background-color: #c4c4c4;
     margin-top: 100px;
+    margin-bottom: 25px;
 }
 .tile-image{
     margin: auto;
@@ -27,7 +28,7 @@
     grid-template-columns: repeat(auto-fit,minmax( 500px, 1fr));
 }
 #tiles{
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: auto;
     background-color: #003761;
@@ -36,4 +37,15 @@
 #logo-image {
     width: 55px;
     height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .tile-style{
+        width: 200px;
+        height: 150px;
+
+    }
+    #tile-container{
+        grid-template-columns: repeat(auto-fit,minmax( 250px, 1fr));
+    }
 }

@@ -1,0 +1,39 @@
+.tile-style{
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    border-radius: 3px;
+    border: solid 1px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #c4c4c4;
+    margin-top: 100px;
+}
+.tile-image{
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.tile-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -42px;
+}
+#tile-container{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax( 500px, 1fr));
+}
+#tiles{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: #003761;
+}
+
+#logo-image {
+    width: 55px;
+    height: 50px;
+}

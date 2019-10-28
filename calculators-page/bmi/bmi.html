@@ -26,7 +26,7 @@
     <h1>BMI calculator</h1>
     <p id="undertext">*Body Mass index</p>
 
-    <ul id ="bmi_list">
+    <ul id="bmi_list">
         <li>
             <label for="weight_label">Weight in kg</label>
             <input type="number" class="bmi_input" placeholder="Weight" id="weight_input">
@@ -50,50 +50,61 @@
     </ul>
 
     <h2>BMI categories</h2>
-    <table>
-        <tr>
-            <th>BMI</th>
-            <th>Weight status</th>
-        </tr>
-        <tr>
-            <td class="unhealthy">Underweight</td>
-            <td class="unhealthy">Below 18.5</td>
-        </tr>
-        <tr>
-            <td class="healthy">Healthy</td>
-            <td class="healthy">18.5-24.9</td>
-        </tr>
-        <tr>
-            <td class="unhealthy">Overweight</td>
-            <td class="unhealthy">25.29.9</td>
-        </tr>
-        <tr>
-            <td class="obese">Obese</td>
-            <td class="obese">30 and above</td>
-        </tr>
-    </table>
-    <div id = "categories">
-    <div class="unhealthy">
-        <h3>BMI less than 18.5</h3>
-        <p>A BMI of less than 18.5 indicates that you are underweight, so you may need to put on some weight. You are
-            recommended to ask your doctor or a dietitian for advice.</p>
-    </div>
-    <div class = "healthy">
-        <h3>Bmi between 18.5-24.9</h3>
-        <p>A BMI of 18.5–24.9 indicates that you are at a healthy weight for your height. By maintaining a healthy weight, you lower your risk of developing serious health problems.</p>
-    </div>
-    <div class ="unhealthy">
-        <h3>Bmi between 25-29.9</h3>
-        <p>A BMI of 25–29.9 indicates that you are slightly overweight. You may be advised to lose some weight for health reasons. You are recommended to talk to your doctor or a dietitian for advice.</p>
-    </div>
-    <div class ="obese">
-        <h3>Bmi over 30</h3>
-        <p>A BMI of over 30 indicates that you are heavily overweight. Your health may be at risk if you do not lose weight. You are recommended to talk to your doctor or a dietitian for advice.</p>
-    </div>
+    <div id="main-container">
+        <div class="bmi_containers">
+            <table>
+                <tr>
+                    <th>BMI</th>
+                    <th>Weight status</th>
+                </tr>
+                <tr>
+                    <td class="unhealthy">Underweight</td>
+                    <td class="unhealthy">Below 18.5</td>
+                </tr>
+                <tr>
+                    <td class="healthy">Healthy</td>
+                    <td class="healthy">18.5-24.9</td>
+                </tr>
+                <tr>
+                    <td class="unhealthy">Overweight</td>
+                    <td class="unhealthy">25.29.9</td>
+                </tr>
+                <tr>
+                    <td class="obese">Obese</td>
+                    <td class="obese">30 and above</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bmi_containers">
+            <div id="categories">
+                <div class="unhealthy">
+                    <h3>BMI less than 18.5</h3>
+                    <p>A BMI of less than 18.5 indicates that you are underweight, so you may need to put on some
+                        weight. You are
+                        recommended to ask your doctor or a dietitian for advice.</p>
+                </div>
+                <div class="healthy">
+                    <h3>Bmi between 18.5-24.9</h3>
+                    <p>A BMI of 18.5–24.9 indicates that you are at a healthy weight for your height. By maintaining a
+                        healthy weight, you lower your risk of developing serious health problems.</p>
+                </div>
+                <div class="unhealthy">
+                    <h3>Bmi between 25-29.9</h3>
+                    <p>A BMI of 25–29.9 indicates that you are slightly overweight. You may be advised to lose some
+                        weight for health reasons. You are recommended to talk to your doctor or a dietitian for advice.
+                    </p>
+                </div>
+                <div class="obese">
+                    <h3>Bmi over 30</h3>
+                    <p>A BMI of over 30 indicates that you are heavily overweight. Your health may be at risk if you do
+                        not lose weight. You are recommended to talk to your doctor or a dietitian for advice.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <a href="https://www.medicalnewstoday.com/articles/323586.php">Source: https://www.medicalnewstoday.com/articles/323586.php</a>
-
+    <a href="https://www.medicalnewstoday.com/articles/323586.php">Source:
+        https://www.medicalnewstoday.com/articles/323586.php</a>
 
     <script src="bmi.js"></script>
     <script src="../../main-page/header.js"></script>

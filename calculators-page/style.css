@@ -28,7 +28,7 @@
     grid-template-columns: repeat(auto-fit,minmax( 500px, 1fr));
 }
 #tiles{
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: auto;
     background-color: #003761;
@@ -43,6 +43,7 @@
     .tile-style{
         width: 200px;
         height: 150px;
+        margin-top: 100px;
 
     }
     #tile-container{

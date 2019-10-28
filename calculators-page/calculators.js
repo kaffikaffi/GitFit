@@ -3,25 +3,25 @@ let tile_array = [
       name: "rm",
       display: "1 Rep Max calculator",
       src: "rm/rm.html",
-      img: "img/rm-tile.png"
+      img: "../img/rm-tile.png"
     },
     tile2 = {
       name: "maxpulse",
       display:"Find your max pulse",
       src: "maxpulse/maxpulse.html",
-      img: "img/maxpulse-tile.png"
+      img: "../img/maxpulse-tile.png"
     },
     tile3 = {
       name: "calorie",
       display:"Find out your daily calorie needs",
       src: "calorie/calorie.html",
-      img: "img/calorie-tile.png"
+      img: "../img/calorie-tile.png"
     },
     tile4= {
       name: "bmi",
       display:"Find your BMI",
       src: "bmi/bmi.html",
-      img: "img/bmi-tile.png"
+      img: "/..img/bmi-tile.png"
     },
     
   ];

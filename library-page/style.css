@@ -1,13 +1,5 @@
 body {
-    background-color: #003761;
-}
-main {
-    position: absolute;
-    width: 80%;
-    left: 10%;
-    right: 10%;
     background-color: lightgray;
-    color: #003761;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -17,31 +9,48 @@ main {
 }
 
 #filter {
-    position: relative;
-    background-color: whitesmoke;
-    width: 70%;
-    margin: 5% 10% 5% 10%;
+    position: absolute;
+    background-color: #003761;
+    width: 80%;
+    margin: 5%;
     padding: 5%;
 }
 
 #exercises {
-    margin: 5% 10% 5% 10%;
+    position: absolute;
+    background-color: #003761;
+    width: 80%;
+    margin: 5%;
     padding: 5%;
+}
+
+.exercise {
+    position: relative;
+    width: 80%;
+    height: 150px;
+    margin: 5%;
     background-color: whitesmoke;
 }
 
-.container {
-    position: relative;
-    width: 70%;
-    height: 150px;
-    margin: 5% 10% 5% 10%;
-    padding: 5%;
-    background-color: lightgray;
-}
-
-.media {
+.imageContainer {
     position: relative;
     height: 80%;
-    width: 20%;
-    margin: 10% 70% 10% 10%;
+    top: 10%;
+    bottom: 10%;
+    left: 5%;
+    width: 240px;
+}
+
+.imageContainer>img {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.description {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin: 5% 5% 5% 35%;
+    float: right;
 }

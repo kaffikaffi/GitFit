@@ -36,7 +36,7 @@ let tile_array = [
   
         let image = document.createElement("img");
         image.setAttribute("class", "tile-image");
-        image.setAttribute("src", element.img);  
+        image.setAttribute("src", element.img);
         
         tile.appendChild(image);
         let display = document.createElement("h3");

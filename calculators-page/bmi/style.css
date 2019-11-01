@@ -2,6 +2,15 @@ body{
     width: 80%;
     min-height: auto;
     margin: auto;
+
+}
+#bmi_main_container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid #003761 ;
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(0,55,97,1);
+    -moz-box-shadow: 0px 0px 19px -1px rgba(0,55,97,1);
+    box-shadow: 0px 0px 19px -1px rgba(0,55,97,1);
 }
 #bmi_list {
 	margin:10px auto;
@@ -57,7 +66,7 @@ h1 {
     margin-bottom: 25px;
 }
 h2 {
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
     margin-bottom: 25px;
     margin-top: 50px;
@@ -73,13 +82,13 @@ h2 {
 
 }
 table {
-    width: auto;
-    border: 2px solid black;
+    width: 80%;
+    border: 2px solid #003761;
     margin: auto;
     margin-bottom: 5%;
 }
 td,th {
-    border: 1px solid black;
+    border: 0.1px solid #003761;
     width: 24%;
     height: 50px;
     font-size: 120%;
@@ -116,4 +125,9 @@ h3 {
     width: 50%;
     min-width: 250px;
     margin: auto;
+}
+
+#logo-image {
+    width: 55px;
+    height: 45px;
 }

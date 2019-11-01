@@ -13,6 +13,7 @@ footer{
 #footer_contact{
     width: 25%;
     height: 100px;
+    text-align: center;
 }
 #footer_social{
     width: 50%;
@@ -43,6 +44,15 @@ footer{
 }
 #footer_social a i{
     transition:0.2s all;
+}
+#footer_contactlink{
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 30px;
 }
 @media screen and (max-width: 822px) {
     footer{

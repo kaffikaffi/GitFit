@@ -13,7 +13,7 @@
             <h3>Calculate your calorie intake</h3>
             <ul id="list_calorie">
                 <li>
-                    <span>Female:</span><input type="radio" name="gender" id="gender_female" value = "female" >
+                    <span>Female:</span><input type="radio" name="gender" id="gender_female" value = "female">
                     <span>Male:</span><input type="radio" name="gender" id="gender_male" value="male" >
                 </li>
                 <li>
@@ -27,7 +27,7 @@
                 </li>
                 <li>
                     <span>Choose your activity level:</span><br>
-                    <select id="input_activity">
+                    <select id="input_activity" required>
                         <option value="1">Less than three times per week</option>
                         <option value="2">Three to five times per week</option>
                         <option value="3">More than five times per week</option>
@@ -36,10 +36,46 @@
                 <li>
                     <button id="btn_calculate">Calculate</button>
                 </li>
-                    <p id="output"></p>
             </ul>
         </section>
-
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Goal</th>
+                        <th>weight per/week</th>
+                        <th>Calories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>loose</th>
+                        <th>-0.5 kg</th>
+                        <th id="loose_05"></th>
+                    </tr>
+                    <tr>
+                        <th>loose</th>
+                        <th>-1 kg</th>
+                        <th id="loose_1"></th>
+                    </tr>
+                    <tr>
+                        <th>Maintain</th>
+                        <th>0</th>
+                        <th id="maintain"></th>
+                    </tr>
+                    <tr>
+                        <th>Gain</th>
+                        <th> 0.5 kg</th>
+                        <th id="gain_05"></th>
+                    </tr>
+                    <tr>
+                        <th>Gain</th>
+                        <th>1 kg</th>
+                        <th id="gain_1"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
 

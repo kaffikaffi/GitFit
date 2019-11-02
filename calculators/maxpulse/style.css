@@ -64,10 +64,13 @@ h1 {
     width: 80%;
     margin:auto;
 }
-
 .calculator_div {
     margin: auto;
     width: 45%;
     padding: 10px 10px;
     border: solid 2px #4691A4;
+}
+#logo-image {
+    width: 55px;
+    height: 45px;
 }

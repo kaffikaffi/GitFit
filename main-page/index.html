@@ -13,18 +13,18 @@
 </head>
 
 <body id="body">
+    <main>
         <script src="header.js"></script>
-        <main>
-            <section id="slideshow">
-                <div id="slideshow_container">                   
-                        <img name="slide" id="slide_img">
-                        <h1 name="slide_text" id="slide_caption"></h1>
-                        <img type="image" src="../img/leftarrow.svg" onclick="(changeImg(prevImg-1))" class="slide_btn" id="slide_btn_left">
-                        <img type="image" src="../img/rightarrow.svg" onclick="(changeImg(prevImg+1))" class="slide_btn" id="slide_btn_right">
-                    <div id="slide_dots">
-                        <button onclick="(changeImg(0))" id="dot1" class="dotx"></button> <!-- Løse dette på en annen måte?-->
-                        <button onclick="(changeImg(1))" id="dot2" class="dotx"></button>
-                        <button onclick="(changeImg(2))" id="dot3" class="dotx"></button>
+        <section id="slideshow">
+            <div id="slideshow_container">                   
+                <img name="slide" id="slide_img">
+                <h1 name="slide_text" id="slide_caption"></h1>
+                <img type="image" src="../img/leftarrow.svg" onclick="(changeImg(prevImg-1))" class="slide_btn" id="slide_btn_left">
+                <img type="image" src="../img/rightarrow.svg" onclick="(changeImg(prevImg+1))" class="slide_btn" id="slide_btn_right">
+                <div id="slide_dots">
+                    <button onclick="(changeImg(0))" id="dot1" class="dotx"></button> <!-- Løse dette på en annen måte?-->
+                    <button onclick="(changeImg(1))" id="dot2" class="dotx"></button>
+                    <button onclick="(changeImg(2))" id="dot3" class="dotx"></button>
                         <button onclick="(changeImg(3))" id="dot4" class="dotx"></button>
                     </div>                   
                 </div>
@@ -33,21 +33,6 @@
                 <div id="tile-container"></div>
             </section>
         </main>
-        <footer id="footer">
-            <section id="footer_contact" class="footer_section">
-                <a id="footer_contactlink" href="../contact-page/contact.html">Contact Us</a>
-            </section>
-            <section id="footer_social" class="footer_section">
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-                <a href="#"><i class="fa fa-reddit"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
-                <a href="#"><i class="fa fa-stack-overflow"></i></a>
-            </section>
-            <section id="footer_logo" class="footer_section">
-                <img src="../img/gitfit-logo-white.png" alt="company logo" id="lg-footer" width="100" height="100">
-            </section>
-        </footer>
         <script src="main.js"></script>
 </body>
 </html>

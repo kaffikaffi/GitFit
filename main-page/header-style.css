@@ -40,7 +40,7 @@ nav{
     display: flex;
     flex-direction: row;
 }
-#login_btn,#register_btn{
+#login_btn,#register_btn,#login_btn_div,#register_btn_div{
     border: none;
     background-color: #003761;
     color: white;
@@ -100,7 +100,7 @@ a{
         display: flex;
         flex-direction: left;
     }
-    #login-container{
+   #login-container{
         display: none;
         flex-direction: column;
     }
@@ -112,6 +112,15 @@ a{
         flex-grow: 1;
         margin: 10px;
         border-radius: 3px;
+    }
+    div > #login-container{
+        display: none;
+    }
+    .btn-class{
+        display: none;
+    }
+    .btn-motion{
+        display: flex !important;
     }
     a{
         text-decoration: none;

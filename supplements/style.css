@@ -1,0 +1,47 @@
+body {
+    background-color: #003761;
+}
+main {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    background-color: lightgray;
+    color: #003761;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 3em;  
+}
+
+#filter {
+    position: relative;
+    background-color: whitesmoke;
+    width: 70%;
+    margin: 5% 10% 5% 10%;
+    padding: 5%;
+}
+
+#exercises {
+    margin: 5% 10% 5% 10%;
+    padding: 5%;
+    background-color: whitesmoke;
+}
+
+.container {
+    position: relative;
+    width: 70%;
+    height: 150px;
+    margin: 5% 10% 5% 10%;
+    padding: 5%;
+    background-color: lightgray;
+}
+
+.media {
+    position: relative;
+    height: 80%;
+    width: 20%;
+    margin: 10% 70% 10% 10%;
+}

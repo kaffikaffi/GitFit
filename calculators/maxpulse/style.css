@@ -1,10 +1,13 @@
 body{
-    width: 80%;
+    width: 100%;
     min-height: auto;
     margin: auto;
 }
 #main_container {
     background-color: rgb(253, 250, 250);
+    height: 100%;
+    width: 80%;
+    margin: auto;
 }
 #bmi_list {
 	margin:10px auto;
@@ -69,7 +72,7 @@ h1 {
 }
 .calculator_div {
     margin: auto;
-    width: 45%;
+    width: 40%;
     padding: 10px 10px;
     border: solid 2px #003761 ;
     margin-bottom: 50px;
@@ -77,4 +80,17 @@ h1 {
 #logo-image {
     width: 55px;
     height: 45px;
+}
+
+
+@media only screen and (max-width: 800px){
+ul input {
+    width: 70px;
+}
+#all {
+    flex-direction: column;
+}
+.calculator_div {
+    width: 80%;
+}
 }

@@ -2,10 +2,11 @@ body{
     width: 100%;
     min-height: auto;
     margin: auto;
+    font-size: 1.2vw;
 
 }
 #bmi_main_container {
-    width: 80%;
+    width: 70%;
     margin: auto;
     border: 2px solid #003761 ;
     -webkit-box-shadow: 0px 0px 19px -1px rgba(0,55,97,1);
@@ -89,7 +90,7 @@ table {
 }
 td,th {
     border: 0.1px solid #003761;
-    width: 24%;
+    width: 20%;
     height: 50px;
     font-size: 120%;
 }
@@ -130,4 +131,10 @@ h3 {
 #logo-image {
     width: 55px;
     height: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+ body {
+    font-size: 0.5em;
+ }
 }

@@ -73,7 +73,7 @@ let tile_array = [
   tile3 = {
     name: "library",
     display:"The best exercises",
-    src: "../library/library.html",
+    src: "../library-page/library-page.html",
     img: "../img/library-tile.jpg"
   },
   tile4= {

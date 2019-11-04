@@ -8,68 +8,58 @@
     <link rel="stylesheet" href="../../main-page/style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../src/header-footer.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Max Pulse</title>
 </head>
 
-<<<<<<< HEAD
-<body id="body">
-    <h1>Max Pulse Calculator</h1>
-    <div id="all">
-        <div class="calculator_div">
-            <h2>For people with normal activity:</h2>
-            <ul>
-                <li>
-                    <label for="age">How old are you?</label>
-                    <input type="number" id="age_input" class="maxpulse_input"><br><br>
-                </li>
-                <li>
-=======
 <body>
-    <section id="main_container">
-        <h1>Max Pulse Calculator</h1>
-        <div id="all">
-            <div class="calculator_div">
-                <h2>For people with normal activity:</h2>
-                <ul>
-                    <li>
-                        <label for="age">How old are you?</label>
-                        <input type="number" id="age_input" class="maxpulse_input"><br><br>
-                    </li>
-                    <li>
->>>>>>> 5d2a0819b1d89217115070343146725867a0bf32
+    <div id="body">
+        <section id="main_container">
+            <h1>Max Pulse Calculator</h1>
+            <div id="all">
+                <div class="calculator_div">
+                    <h2>For people with normal activity:</h2>
+                    <ul>
+                        <li>
+                            <label for="age">How old are you?</label>
+                            <input type="number" id="age_input" class="maxpulse_input"><br><br>
+                        </li>
+                        <li>
 
-                        <h3>Gender</h3>
-                        <input type="radio" name="maxpulse_gender" class="gender_maxpulse" value="male">Male
-                        <input type="radio" name="maxpulse_gender" class="gender_maxpulse" value=female>Female<br><br>
-                    </li>
-                    <li>
-                        <input type="submit" id="maxpulse_btn" value="Check my maxpulse">
-                        <p id="maxpulse_output">Your max pulse is: </p>
-                    </li>
-                </ul>
+                            <h3>Gender</h3>
+                            <input type="radio" name="maxpulse_gender" class="gender_maxpulse" value="male">Male
+                            <input type="radio" name="maxpulse_gender" class="gender_maxpulse"
+                                value=female>Female<br><br>
+                        </li>
+                        <li>
+                            <input type="submit" id="maxpulse_btn" value="Check my maxpulse">
+                            <p id="maxpulse_output">Your max pulse is: </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calculator_div">
+
+                    <h2>For well trained and active athletes:</h2>
+                    <ul>
+                        <li>
+                            <h3>how old are you?</h3>
+                            <input type="number" id="age_input2" class="maxpulse_input">
+                        </li>
+                        <li>
+                            <h3>Gender</h3>
+                            <input type="radio" name="maxpulse_gender" class="gender_maxpulse" value="male">Male
+                            <input type="radio" name="maxpulse_gender" class="gender_maxpulse"
+                                value=female>Female<br><br>
+                        </li>
+                        <li>
+                            <input type="submit" id="maxpulse_btn2" value="check my maxpulse">
+                        </li>
+                        <p id="maxpulse_output2">Your max pulse is: </p>
+                    </ul>
+                </div>
             </div>
-            <div class="calculator_div">
-
-                <h2>For well trained and active athletes:</h2>
-                <ul>
-                    <li>
-                        <h3>how old are you?</h3>
-                        <input type="number" id="age_input2" class="maxpulse_input">
-                    </li>
-                    <li>
-                        <h3>Gender</h3>
-                        <input type="radio" name="maxpulse_gender" class="gender_maxpulse" value="male">Male
-                        <input type="radio" name="maxpulse_gender" class="gender_maxpulse" value=female>Female<br><br>
-                    </li>
-                    <li>
-                        <input type="submit" id="maxpulse_btn2" value="check my maxpulse">
-                    </li>
-                    <p id="maxpulse_output2">Your max pulse is: </p>
-                </ul>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <script src="../../src/header-footer.js"></script>
     <script src="maxpulse.js"></script>
 

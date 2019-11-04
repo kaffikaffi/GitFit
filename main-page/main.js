@@ -21,19 +21,29 @@ const dots = [
   "dot4"
 ];
 
+const source = [
+  "../library/library.html",
+  "../fitness/fitness.html",
+  "../calculators/calculators.html",
+  "../register-page/register.html",
+];
+
 const time = 6969;
 let prevImg = 0;
 let timeout;
+
 
 function changeImg(index) {
   if(index >= images.length || index < 0) {
     index = images.length - Math.abs(index);
   }
-
-  document.getElementById("slide_img").src = images[index];
+const slideimg = document.getElementById("slide_img");
+  slideimg.src = images[index];
+  slideimg.addEventListener("click",()=>window.location.href = source[index]);
   document.getElementById("slide_caption").innerHTML = imagetext[index];
   document.getElementById(dots[prevImg]).style.backgroundColor = "white";
   document.getElementById(dots[index]).style.backgroundColor = "#007163";
+  
 
   prevImg = index;
   clearTimeout(timeout);

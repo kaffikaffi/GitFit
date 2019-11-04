@@ -2,12 +2,18 @@ const btnCalculate = document.getElementById("btn_calculate");
 btnCalculate.addEventListener(('click') , () => calculateCalories());
  
 
+function isValid(input) {
+     return (input > 0 ? true : false)
+ }
+
 function calculateCalories(){
-    let gender = document.querySelector('input[name="gender"]:checked').value;
+
     let weight = parseFloat(document.getElementById("input_weight").value);
     let height = parseFloat(document.getElementById("input_height").value);
     let age = parseFloat(document.getElementById("input_age").value);
-    
+
+    if(isValid(weight) && isValid(height) && isValid(age) && document.querySelector('input[name="gender"]').checked){
+     let gender = document.querySelector('input[name="gender"]:checked').value;
     let selectElement = document.getElementById("input_activity");
     let activityLevel = parseFloat(selectElement.options[selectElement.selectedIndex].value);
     console.log(activityLevel);
@@ -43,10 +49,15 @@ function calculateCalories(){
     }
 
 
-    document.getElementById("loose_05").innerHTML = (totalCalories-250)
-    document.getElementById("loose_1").innerHTML = (totalCalories-500)
-    document.getElementById("maintain").innerHTML = (totalCalories)
-    document.getElementById("gain_05").innerHTML = (totalCalories+250)
-    document.getElementById("gain_1").innerHTML = (totalCalories+500)
-   
+    document.getElementById("loose_05").innerHTML = Math.round(totalCalories-250)
+    document.getElementById("loose_1").innerHTML = Math.round(totalCalories-500)
+    document.getElementById("maintain").innerHTML = Math.round(totalCalories)
+    document.getElementById("gain_05").innerHTML = Math.round(totalCalories+250)
+    document.getElementById("gain_1").innerHTML = Math.round(totalCalories+500)
+    document.getElementById("message").innerHTML = "";
+
+}
+else{
+     document.getElementById("message").innerHTML = "You must fill in the remaining information";
+}
 }

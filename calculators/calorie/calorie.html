@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../src/header-footer.CSS">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <div id="body">
-        <main>
-            <section>
+        <main id="wrapper">
+            <section id="section_input">
                 <h3>Calculate your calorie intake</h3>
                 <ul id="list_calorie">
                     <li>
@@ -41,9 +41,13 @@
                     <li>
                         <button id="btn_calculate">Calculate</button>
                     </li>
+                    <li>
+                        <p id="message"></p>
+                    </li>
                 </ul>
             </section>
-            <section>
+            <section id="section_output">
+                <h3>Your estimated calorie intake</h3>
                 <table>
                     <thead>
                         <tr>

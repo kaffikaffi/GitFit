@@ -85,6 +85,7 @@ function createHeaderElements(){
   
     createButton("Log in", "login_btn",LOGIN_DIV);
     createButton("Register", "register_btn", LOGIN_DIV);
+    document.getElementById("register_btn").addEventListener("click" , () => window.location.href = "../register-page/register.html");
   }
   
   renderHeader(UL_ELEMENT,nav_array)

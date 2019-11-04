@@ -3,6 +3,9 @@ body{
     min-height: auto;
     margin: auto;
 }
+#main_container {
+    background-color: rgb(253, 250, 250);
+}
 #bmi_list {
 	margin:10px auto;
 	max-width: 400px;
@@ -54,7 +57,7 @@ h1 {
     margin-top: 100px;
     width: 400px;
     margin-bottom: 50px;
-    
+
 }
 #all {
     display: flex;
@@ -68,7 +71,8 @@ h1 {
     margin: auto;
     width: 45%;
     padding: 10px 10px;
-    border: solid 2px #4691A4;
+    border: solid 2px #003761 ;
+    margin-bottom: 50px;
 }
 #logo-image {
     width: 55px;

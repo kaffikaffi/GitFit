@@ -3,25 +3,25 @@ let tile_array = [
       name: "rm",
       display: "1 Rep Max calculator",
       src: "rm/rm.html",
-      img: "../img/rm-tile.png"
+      img: "img/rm-tile.jpg"
     },
     tile2 = {
       name: "maxpulse",
       display:"Find your max pulse",
       src: "maxpulse/maxpulse.html",
-      img: "../img/maxpulse-tile.png"
+      img: "img/maxpulse-tile.jpeg"
     },
     tile3 = {
       name: "calorie",
       display:"Find out your daily calorie needs",
       src: "calorie/calorie.html",
-      img: "../img/calorie-tile.png"
+      img: "img/calorie-tile.jpeg"
     },
     tile4= {
       name: "bmi",
       display:"Find your BMI",
       src: "bmi/bmi.html",
-      img: "/..img/bmi-tile.png"
+      img: "img/bmi-tile.jpeg"
     },
     
   ];
@@ -30,6 +30,7 @@ let tile_array = [
   function createTile(array) {
       array.forEach(element => {
         let tile = document.createElement("div");
+        tile.addEventListener("click",()=>window.location.href = element.src);
         tile.setAttribute("class", "tile-style");
         tile.setAttribute("href", element.src);
         //tile.style.backgroundImage = "url(" + `${element.img}` + ")";

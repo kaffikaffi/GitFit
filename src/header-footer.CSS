@@ -4,11 +4,9 @@ footer{
     background-color: #003761;
     margin-top: auto;
     text-align: center;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 #footer_contact{
     width: 25%;

@@ -62,37 +62,43 @@ let tile_array = [
     name: "tips",
     display: "Find the best tips",
     src: "../fitness/fitness.html",
-    img: "../img/tips-tile.jpg"
+    img: "../img/gradient.png",
+    icon: "../img/icons/fitness.png"
   },
   tile2 = {
     name: "calcualtors",
     display:"Calculate your goals",
     src: "../calculators/calculators.html",
-    img: "../img/calculator-tile.png"
+    img: "../img/gradient.png",
+    icon: "../img/icons/calculator.png"
   },
   tile3 = {
     name: "library",
     display:"The best exercises",
     src: "../library-page/library-page.html",
-    img: "../img/library-tile.jpg"
+    img: "../img/gradient.png",
+    icon: "../img/icons/library.png"
   },
   tile4= {
     name: "supplements",
     display:"What supplements to use",
     src: "../supplements/supplements.html",
-    img: "../img/supplement-tile.jpg"
+    img: "../img/gradient.png",
+    icon: "../img/icons/supplements.png"
   },
   tile5 = {
     name: "program",
     display:"Generate program",
     src: "../program-page/program.html",
-    img: "../img/program-tile.jpg"
+    img: "../img/gradient.png",
+    icon: "../img/icons/program.png"
   },
   tile6 = {
     name: "register",
     display:"Register now",
     src: "../register-page/register.html",
-    img: "../img/register-tile.jpg"
+    img: "../img/gradient.png",
+    icon: "../img/icons/register.png"
   }
 ];
 
@@ -107,18 +113,49 @@ function createTile(array) {
 
       let image = document.createElement("img");
       image.setAttribute("class", "tile-image");
-      image.setAttribute("src", element.img);  
+      image.setAttribute("src", element.img);
+
+      let icon = document.createElement("img");
+      icon.setAttribute("class", "tile-icon");
+      icon.setAttribute("src", element.icon);  
       
       tile.appendChild(image);
+      tile.appendChild(icon);
       let display = document.createElement("h3");
       display.setAttribute("class", "tile-header");
       display.textContent = element.display;
       tile.appendChild(display);
       TILE_DIV.appendChild(tile);
+      tile.addEventListener("click", () => image.classList.toggle("tile-image-rotate"));
+      
     });
-    console.log(tile_array);
   }
 
-createTile(tile_array);
+
+  createTile(tile_array);
+
+  //<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+/* 
+function credit() {
+  const footer = document.getElementById("footer");
+  let div = document.createElement("div");
+  let a_author = document.createElement("a");
+  let a_source = document.createElement("a");
+  a_author= "Freepik";
+  a_author.setAttribute("href", "https://www.flaticon.com/authors/freepik");
+  div.appendChild(a_author);
+
+  a_source.setAttribute("href","https://www.flaticon.com/");
+  a_source.textContent = "www.flaticon.com";
+  div.appendChild(a_source);
+  div.textContent = ("Icons made by " + a_author + "from" + a_source);
+  footer.appendChild(div);
+
+}
+window.onload = credit;
+
+*/ 
+
 
 //tile rendering end

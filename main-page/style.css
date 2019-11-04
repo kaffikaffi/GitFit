@@ -44,10 +44,12 @@ width: 100%;
 
 #slide_btn_left {
     left: 0;
+    z-index: 100;
 }
 
 #slide_btn_right {
     right: 0;
+    z-index: 100;
 }
 
 #slide_btns_container {

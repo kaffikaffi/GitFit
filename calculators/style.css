@@ -7,7 +7,6 @@
     margin-top: 50px;
     text-align: center;
     background-color: #c4c4c4;
-    margin-top: 100px;
     margin-bottom: 25px;
 }
 .tile-image{
@@ -17,26 +16,52 @@
     height: 100%;
 }
 .tile-header{
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    background-color: rgba(0,55,97,0.5);
+    font-weight: bold;
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: -42px;
+    margin-top: -42%;
 }
 #tile-container{
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fit,minmax( 500px, 1fr));
+    margin-bottom: 50px;
 }
 #tiles{
     width: 80%;
     height: 100%;
     margin: auto;
     background-color: #003761;
+    margin-bottom: 50px;
 }
 
 #logo-image {
     width: 55px;
     height: 50px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.tile-header:hover {
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 75px;
+    color:white;
+    font-size: 200%;
 }
 
 @media only screen and (max-width: 650px) {
@@ -49,4 +74,8 @@
     #tile-container{
         grid-template-columns: repeat(auto-fit,minmax( 250px, 1fr));
     }
+    h1{
+        font-size: 130%;
+    }
+
 }

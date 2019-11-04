@@ -129,7 +129,6 @@ function createHeaderElements(){
         nav.classList.toggle('nav-ul-motion');
   
         count += 1;
-        console.log(count);
      });
    }
    activeNav()

@@ -90,7 +90,7 @@ function createTile(array) {
     array.forEach(element => {
       let tile = document.createElement("div");
       tile.setAttribute("class", "tile-style");
-      tile. setAttribute("href", element.src)
+      tile.setAttribute("href", element.src)
       //tile.style.backgroundImage = "url(" + `${element.img}` + ")";
 
       let image = document.createElement("img");

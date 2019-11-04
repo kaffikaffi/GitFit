@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../main-page/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../src/header-footer.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/header-footer.CSS">
     <title>GitFit</title>
 </head>
-
 <body>
-    <header id="header">
-        <img src="../img/gitfit-slogo.svg" width="100px" height="100px" id="logo-image" alt="Company logo">
-        <nav id="nav">
-            <ul id="nav-ul" class="nav-ul"></ul>
-            <div id="login-container"></div>
-        </nav>
-        <div id="hamburger-menu">
-            <div class="bar" id="bar1"></div>
-            <div class="bar" id="bar2"></div>
-            <div class="bar" id="bar3"></div>
-        </div>
-    </header>
-    <form action="" method="">
-        <ul>
-            <li>
-                <label for="name">Name:</label>
-                <input type="text" name="name" class="field-divided" placeholder="First Name" />
-                <input type="text" name="name" class="field-divided" placeholder="Last Name" />
-            </li>
-            <li>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" class="field-long" />
-            </li>
-            <li>
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" class="field-long field-textarea"></textarea>
-            </li>
-            <li>
-                <input type="submit" value="Submit" />
-            </li>
-        </ul>
-    </form>
-    <script src="../main-page/header.js"></script>
-</body>
+    <div id="body">
 
+    
+    <main>
+        <form action="" method="">
+            <ul id="form_list">
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" class="field-divided" placeholder="First Name" />
+                    <input type="text" name="name" class="field-divided" placeholder="Last Name" />
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="field-long" />
+                </li>
+                <li>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" class="field-long field-textarea"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Submit" />
+                </li>
+            </ul>
+        </form>
+    </main>
+    <script src="../src/header-footer.js"></script>
+</div>
+</body>
 </html>

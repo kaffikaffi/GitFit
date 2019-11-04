@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../src/header-footer.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="body">
+        <main>
+            <section>
+                <h3>Calculate your calorie intake</h3>
+                <ul id="list_calorie">
+                    <li>
+                        <span>Female:</span><input type="radio" name="gender" id="gender_female" value="female">
+                        <span>Male:</span><input type="radio" name="gender" id="gender_male" value="male">
+                    </li>
+                    <li>
+                        <input type="number" id="input_weight" min="1" placeholder="Weight">
+                    </li>
+                    <li>
+                        <input type="number" id="input_height" min="1" placeholder="Height">
+                    </li>
+                    <li>
+                        <input type="number" id="input_age" min="1" placeholder="Age">
+                    </li>
+                    <li>
+                        <span>Choose your activity level:</span><br>
+                        <select id="input_activity" required>
+                            <option value="1">Less than three times per week</option>
+                            <option value="2">Three to five times per week</option>
+                            <option value="3">More than five times per week</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button id="btn_calculate">Calculate</button>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Goal</th>
+                            <th>weight per/week</th>
+                            <th>Calories</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>loose</th>
+                            <th>-0.5 kg</th>
+                            <th id="loose_05"></th>
+                        </tr>
+                        <tr>
+                            <th>loose</th>
+                            <th>-1 kg</th>
+                            <th id="loose_1"></th>
+                        </tr>
+                        <tr>
+                            <th>Maintain</th>
+                            <th>0</th>
+                            <th id="maintain"></th>
+                        </tr>
+                        <tr>
+                            <th>Gain</th>
+                            <th> 0.5 kg</th>
+                            <th id="gain_05"></th>
+                        </tr>
+                        <tr>
+                            <th>Gain</th>
+                            <th>1 kg</th>
+                            <th id="gain_1"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="../../src/header-footer.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,32 +1,26 @@
-body{
-    width: 80%;
-    min-height: 700px;
-    background-color: black;
-    margin: auto;
-}
 form{
     background-color: white;
 }
-ul {
+#list{
 	margin:10px auto;
 	max-width: 400px;
 	padding: 20px 12px 10px 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
 }
-ul li {
+#list li {
 	padding: 0;
 	display: block;
 	list-style: none;
 	margin: 10px 0 0 0;
 }
-ul label{
+#list label{
 	margin:0 0 3px 0;
 	padding: 0px;
 	display:block;
 	font-weight: bold;
 }
-ul input,textarea{
+#list input,textarea{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -35,7 +29,7 @@ ul input,textarea{
     margin:0px;
     outline: none;
 }
-ul input:focus, ul textarea:focus{
+#list input:focus, ul textarea:focus{
 	-moz-box-shadow: 0 0 8px #4691A4;
 	-webkit-box-shadow: 0 0 8px #4691A4;
 	box-shadow: 0 0 8px #4691A4;
@@ -69,4 +63,10 @@ ul input[type=submit]:hover{
 .input_gender {
     margin: 5px;
     padding: 2px 4px;
+}
+
+h1 {
+	width: auto;
+	margin: auto;
+	margin-top: 100px;
 }

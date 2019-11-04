@@ -62,37 +62,41 @@ let tile_array = [
     name: "tips",
     display: "Find the best tips",
     src: "../fitness/fitness.html",
-    img: "../img/tips-tile.png"
+    img: "../img/tips-tile.jpg"
   },
   tile2 = {
     name: "calcualtors",
     display:"Calculate your goals",
     src: "../calculators/calculators.html",
+<<<<<<< HEAD
     img: "../img/calculator-tile.png"
+=======
+    img: "../img/calculator-tile.jpg"
+>>>>>>> f6444ba417ba256f0c0bf27a188947b9dd4a3782
   },
   tile3 = {
     name: "library",
     display:"The best exercises",
-    src: "../library/library.html",
-    img: "../img/library-tile.png"
+    src: "../library-page/library-page.html",
+    img: "../img/library-tile.jpg"
   },
   tile4= {
     name: "supplements",
     display:"What supplements to use",
     src: "../supplements/supplements.html",
-    img: "../img/supplement-tile.png"
+    img: "../img/supplement-tile.jpg"
   },
   tile5 = {
     name: "program",
     display:"Generate program",
     src: "../program-page/program.html",
-    img: "../img/program-tile.png"
+    img: "../img/program-tile.jpg"
   },
   tile6 = {
     name: "register",
     display:"Register now",
     src: "../register-page/register.html",
-    img: "../img/register-tile.png"
+    img: "../img/register-tile.jpg"
   }
 ];
 

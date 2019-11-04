@@ -68,11 +68,7 @@ let tile_array = [
     name: "calcualtors",
     display:"Calculate your goals",
     src: "../calculators/calculators.html",
-<<<<<<< HEAD
-    img: "../img/calculator-tile.png"
-=======
     img: "../img/calculator-tile.jpg"
->>>>>>> f6444ba417ba256f0c0bf27a188947b9dd4a3782
   },
   tile3 = {
     name: "library",

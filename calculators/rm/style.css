@@ -1,8 +1,5 @@
-body{
-    width: 80%;
-    height: 100%;
+#section_input{
     margin: auto;
-    padding: 0;
 }
 #list_1rm{
     margin:10px auto;
@@ -16,7 +13,6 @@ option{
     background-color: #4691A4;
     color: white;
 }
-/**/
 #list_1rm li{
     padding: 0;
 	display: block;

@@ -37,8 +37,8 @@ function changeImg(index) {
   if(index >= images.length || index < 0) {
     index = images.length - Math.abs(index);
   }
-const slideimg = document.getElementById("slide_img");
-  slideimg.src = images[index];
+const slideimg = document.getElementById("slideshow_container");
+  slideimg.style.backgroundImage = 'url('+images[index]+')';
   slideimg.addEventListener("click",()=>window.location.href = source[index]);
   document.getElementById("slide_caption").innerHTML = imagetext[index];
   document.getElementById(dots[prevImg]).style.backgroundColor = "white";

@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/header-footer.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>GitFit - Exercise library</title>
 </head>
+
 <body>
-    <main>
-        <h1 id="title">Exercise library</h1>
-        <section>
-            <div id="filter">
-                <label for="chest">Chest</label>
-                <input id="chest" type="checkbox" checked><br>
-                <label for="shoulders">Shoulders</label>
-                <input id="shoulders" type="checkbox" checked><br>
-                <label for="legs">Legs</label>
-                <input id="legs" type="checkbox" checked><br>
-                <label for="back">Back</label>
-                <input id="back" type="checkbox" checked><br>
-                <label for="arms">Arms</label>
-                <input id="arms" type="checkbox" checked><br>
-                <label for="core">Core</label>
-                <input id="core" type="checkbox" checked><br>
-            </div>
-        </section>
-        <hr>
-        <section id="exercises">
-            <div class="exercise" id="exercise1">
-                <div class="imageContainer"><img src="../img/exampleimg5.jpg" alt="exampleimg1"></div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div id="body">
+        <main>
+            <h1 id="title">Exercise library</h1>
+            <section>
+                <div id="filter">
+                    <label for="chest">Chest</label>
+                    <input id="chest" type="checkbox" checked><br>
+                    <label for="shoulders">Shoulders</label>
+                    <input id="shoulders" type="checkbox" checked><br>
+                    <label for="legs">Legs</label>
+                    <input id="legs" type="checkbox" checked><br>
+                    <label for="back">Back</label>
+                    <input id="back" type="checkbox" checked><br>
+                    <label for="arms">Arms</label>
+                    <input id="arms" type="checkbox" checked><br>
+                    <label for="core">Core</label>
+                    <input id="core" type="checkbox" checked><br>
                 </div>
-            </div>
-            <div class="exercise" id="exercise2">
-                <div class="imageContainer"><img src="../img/exampleimg6.jpg" alt="exampleimg2"></div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </section>
+            <hr>
+            <section id="exercises">
+                <div class="exercise" id="exercise1">
+                    <div class="imageContainer"><img src="../img/exampleimg5.jpg" alt="exampleimg1"></div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
                 </div>
-            </div>
-            <div class="exercise" id="exercise3">
-                <div class="imageContainer"><img src="../img/exampleimg7.jpg" alt="exampleimg3"></div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="exercise" id="exercise2">
+                    <div class="imageContainer"><img src="../img/exampleimg6.jpg" alt="exampleimg2"></div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
                 </div>
-            </div>
-            <div class="exercise" id="exercise4">
-                <div class="imageContainer"><img src="../img/exampleimg8.jpg" alt="exampleimg4"></div>
-                <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="exercise" id="exercise3">
+                    <div class="imageContainer"><img src="../img/exampleimg7.jpg" alt="exampleimg3"></div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="exercise" id="exercise4">
+                    <div class="imageContainer"><img src="../img/exampleimg8.jpg" alt="exampleimg4"></div>
+                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../src/header-footer.js"></script>
     <script src="library.js"></script>
 </body>
+
 </html>

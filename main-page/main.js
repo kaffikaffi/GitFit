@@ -61,25 +61,25 @@ let tile_array = [
   tile1 = {
     name: "tips",
     display: "Find the best tips",
-    src: "../tips-page/tips.html",
+    src: "../fitness/fitness.html",
     img: "../img/tips-tile.png"
   },
   tile2 = {
     name: "calcualtors",
     display:"Calculate your goals",
-    src: "../calculator-page/main-calculator.html",
+    src: "../calculators/calculator.html",
     img: "../img/calculator-tile.png"
   },
   tile3 = {
     name: "library",
     display:"The best exercises",
-    src: "../library-page/library.html",
+    src: "../library/library.html",
     img: "../img/library-tile.png"
   },
   tile4= {
     name: "supplements",
     display:"What supplements to use",
-    src: "../supplement-page/supplement.html",
+    src: "../supplements/supplements.html",
     img: "../img/supplement-tile.png"
   },
   tile5 = {
@@ -102,6 +102,8 @@ function createTile(array) {
       tile.setAttribute("class", "tile-style");
       tile.setAttribute("href", element.src)
       //tile.style.backgroundImage = "url(" + `${element.img}` + ")";
+      tile.style.cursor = "pointer";
+      tile.addEventListener("click", () => window.location.href = element.src);
 
       let image = document.createElement("img");
       image.setAttribute("class", "tile-image");

@@ -37,8 +37,8 @@ function changeImg(index) {
   if(index >= images.length || index < 0) {
     index = images.length - Math.abs(index);
   }
-const slideimg = document.getElementById("slideshow_container");
-  slideimg.style.backgroundImage = 'url('+images[index]+')';
+const slideimg = document.getElementById("slide_img");
+  slideimg.src = images[index];
   slideimg.addEventListener("click",()=>window.location.href = source[index]);
   document.getElementById("slide_caption").innerHTML = imagetext[index];
   document.getElementById(dots[prevImg]).style.backgroundColor = "white";
@@ -68,12 +68,16 @@ let tile_array = [
     name: "calcualtors",
     display:"Calculate your goals",
     src: "../calculators/calculators.html",
+<<<<<<< HEAD
+    img: "../img/calculator-tile.png"
+=======
     img: "../img/calculator-tile.jpg"
+>>>>>>> f6444ba417ba256f0c0bf27a188947b9dd4a3782
   },
   tile3 = {
     name: "library",
     display:"The best exercises",
-    src: "../library/library.html",
+    src: "../library-page/library-page.html",
     img: "../img/library-tile.jpg"
   },
   tile4= {

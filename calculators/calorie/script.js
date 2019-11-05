@@ -12,7 +12,7 @@ function calculateCalories(){
     let height = parseFloat(document.getElementById("input_height").value);
     let age = parseFloat(document.getElementById("input_age").value);
 
-    if(isValid(weight) && isValid(height) && isValid(age) && document.querySelector('input[name="gender"]').checked){
+    if(isValid(weight) && isValid(height) && isValid(age) && document.querySelector('input[type=radio]:checked').checked === true){
      let gender = document.querySelector('input[name="gender"]:checked').value;
     let selectElement = document.getElementById("input_activity");
     let activityLevel = parseFloat(selectElement.options[selectElement.selectedIndex].value);
@@ -59,5 +59,14 @@ function calculateCalories(){
 }
 else{
      document.getElementById("message").innerHTML = "You must fill in the remaining information";
+     document.getElementById("loose_05").innerHTML = "";
+     document.getElementById("loose_1").innerHTML = "";
+     document.getElementById("maintain").innerHTML = "";
+     document.getElementById("gain_05").innerHTML = "";
+     document.getElementById("gain_1").innerHTML = "";
+
+
+
+
 }
 }

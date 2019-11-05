@@ -2,55 +2,66 @@
     margin: auto;
     width: 400px;
     height: 300px;
-    border-radius: 3px;
-    border: solid 1px;
+    border-radius: 6px;
     margin-top: 50px;
     text-align: center;
     background-color: #c4c4c4;
     margin-bottom: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.tile-style:hover{
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.4);
 }
 .tile-image{
     margin: auto;
     max-width: 100%;
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
+
 .tile-header{
-    color: black;
+    color: white;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.4em;
     padding: 10px;
     background-color: rgba(0,55,97,0.5);
     font-weight: bold;
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: -42%;
+    margin-top: -62%;
 }
 #tile-container{
     display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit,minmax( 500px, 1fr));
-    margin-bottom: 50px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax( 400px, 1fr));
 }
+.tile-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+    margin-left: 35%;
+    position: relative;
+}
+
 #tiles{
-    width: 80%;
+    width: 60%;
     height: 100%;
     margin: auto;
-    background-color: #003761;
     margin-bottom: 50px;
+}
+.hover_div {
+    margin-top: -58%;
+    position: relative;
 }
 
 #logo-image {
     width: 55px;
     height: 50px;
 }
-
-img:hover {
-    cursor: pointer;
-}
-
-.tile-header:hover {
+.tile-image-rotate {
+    transform: rotate(180deg);
     cursor: pointer;
 }
 
@@ -60,7 +71,7 @@ h1 {
     justify-content: center;
     margin: auto;
     margin-top: 75px;
-    color:white;
+    color:#003761 ;
     font-size: 200%;
 }
 
@@ -69,13 +80,17 @@ h1 {
         width: 250px;
         height: 187.5px;
         margin-top: 100px;
-
     }
     #tile-container{
         grid-template-columns: repeat(auto-fit,minmax( 250px, 1fr));
     }
     h1{
         font-size: 130%;
+    }
+    .tile-icon {
+        margin: auto;
+        margin-top: -160px;
+        
     }
 
 }

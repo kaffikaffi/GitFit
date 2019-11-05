@@ -183,8 +183,16 @@ const muscles = {
 //Brainfuck function
 function assignExercises() {
     let nrOfDays = document.getElementById("days").value;
+    if(nrOfDays < 1) {
+        output.innerHTML = "No training for you, lazy ass bitch."
+        return;
+    } else if(nrOfDays > 7) {
+        output.innerHTML = "Training more than seven days a week will create a black hole."
+        return;
+    }
+
     let days = {};   
-    let availableMuscles = []
+    let availableMuscles = [];
     for(i in muscles) {
         availableMuscles.push(i);
     }
@@ -193,31 +201,65 @@ function assignExercises() {
         let randomMuscles = [];
         let nrOfMuscles = Math.floor(availableMuscles.length/(nrOfDays-i));
         for(let j=0; j<nrOfMuscles; j++) {
-            let randomMuscleIndex = Math.floor(Math.random()*availableMuscles.length)
+            let randomMuscleIndex = Math.floor(Math.random()*availableMuscles.length);
             randomMuscles.push(availableMuscles[randomMuscleIndex]);
-            availableMuscles.splice(randomMuscleIndex, 1)
+            availableMuscles.splice(randomMuscleIndex, 1);
         }
-        days[i+1] = {}
-        days[i+1].muscles = randomMuscles
+        days[i+1] = {};
+        days[i+1].muscles = randomMuscles;
     }
 
     for(day in days) {
-        let randomExercises = []
-
+        let randomExercises = [];
         for(muscle of days[day]["muscles"]) {
             for(exercise in exercises) {
                 if(exercises[exercise]["muscles"].includes(muscle)) {
-                    randomExercises.push(exercise)
+                    randomExercises.push(exercise);
                 }
             }
         }
         while(new Set(randomExercises).size > 10) {
-            randomExercises.splice(Math.floor(Math.random()*randomExercises.length), 1)
+            randomExercises.splice(Math.floor(Math.random()*randomExercises.length), 1);
         }
-        days[day].exercises = Array.from(new Set(randomExercises))
+        days[day].exercises = Array.from(new Set(randomExercises));
     }
-    console.log(days)
+
+    //Printing days object to HTML
+    output.innerHTML = "";
+    for(day in days) {
+        let newTitle = document.createElement("h2");
+        newTitle.innerHTML = "Day " + day;
+
+        let newMuscles = document.createElement("ul");
+        for(muscle of days[day]["muscles"]) {
+            let newMuscle = document.createElement("li");
+            newMuscle.innerHTML = muscles[muscle];
+            newMuscles.appendChild(newMuscle)
+        }
+
+        let newExercises = document.createElement("ul");
+        for(exercise of days[day]["exercises"]) {
+            let newExercise = document.createElement("li");
+            newExercise.innerHTML = exercises[exercise]["name"];
+            newExercises.appendChild(newExercise)
+        }
+
+        let newDay = document.createElement("div");
+        newDay.className = day;
+        let t1 = document.createElement("h3");
+        let t2 = document.createElement("h3")
+        t1.innerHTML = "Muscles:";
+        t2.innerHTML = "Exercises:";
+        newDay.appendChild(newTitle)
+        newDay.appendChild(t1)
+        newDay.appendChild(newMuscles)
+        newDay.appendChild(t2)
+        newDay.appendChild(newExercises)
+        output.appendChild(newDay)
+        output.appendChild(document.createElement("br"))
+    }
 }
 
 let btnGenerate = document.getElementById("generate");
-btnGenerate.addEventListener("click", assignExercises)
+let output = document.getElementById("output");
+btnGenerate.addEventListener("click", assignExercises);

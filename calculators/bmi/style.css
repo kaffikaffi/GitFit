@@ -6,12 +6,8 @@ body{
 
 }
 #bmi_main_container {
-    width: 70%;
+    width: 80%;
     margin: auto;
-    border: 2px solid #003761 ;
-    -webkit-box-shadow: 0px 0px 19px -1px rgba(0,55,97,1);
-    -moz-box-shadow: 0px 0px 19px -1px rgba(0,55,97,1);
-    box-shadow: 0px 0px 19px -1px rgba(0,55,97,1);
 }
 #bmi_list {
 	margin:10px auto;
@@ -78,12 +74,10 @@ h2 {
 }
 #bmi_output, #bmi_output_def {
     font-size: 130%;
-    font-weight: 130%;
-    margin-bottom: 0px;
-
 }
 table {
     width: 80%;
+    max-width: 1000px;
     border: 2px solid #003761;
     margin: auto;
     margin-bottom: 5%;
@@ -92,33 +86,21 @@ td,th {
     border: 0.1px solid #003761;
     width: 20%;
     height: 50px;
-    font-size: 120%;
 }
 .healthy {
-    background-color: #0fce0f;
-    border-bottom: solid 1px black;
+    background-color: #0cb829;
     padding: 10px 10px;
-    
+
 }
 .unhealthy {
-    background-color: #4691A4;
-    border-bottom: solid 1px black;
+    background-color: rgb(243, 223, 39);
     padding: 10px 10px;
-    
 }
 .obese {
-    background-color: rgb(45, 63, 230);
+    background-color: rgb(230, 45, 85);
     border-bottom: solid 1px black;
     padding: 10px 10px;
     
-}
-p {
-    max-width: 800px;
-    margin: auto;
-    margin-bottom: 50px;
-}
-h3 {
-    margin-top: 0px;
 }
 #categories {
     border:solid 2px black;
@@ -127,14 +109,11 @@ h3 {
     min-width: 250px;
     margin: auto;
 }
-
-#logo-image {
-    width: 55px;
-    height: 45px;
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
  body {
-    font-size: 0.5em;
+    font-size: 0.8em;
+ }
+ table {
+     font-size: 1.2em;
  }
 }

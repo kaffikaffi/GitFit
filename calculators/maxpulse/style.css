@@ -4,7 +4,6 @@ body{
     margin: auto;
 }
 #main_container {
-    background-color: rgb(253, 250, 250);
     height: 100%;
     width: 80%;
     margin: auto;
@@ -58,8 +57,8 @@ ul input[type=submit]:hover{
 h1 {
     margin: auto;
     margin-top: 100px;
-    width: 400px;
     margin-bottom: 50px;
+    width: 270px;
 
 }
 #all {
@@ -77,15 +76,9 @@ h1 {
     border: solid 2px #003761 ;
     margin-bottom: 50px;
 }
-#logo-image {
-    width: 55px;
-    height: 45px;
-}
-
-
 @media only screen and (max-width: 800px){
 ul input {
-    width: 70px;
+    width: 150px;
 }
 #all {
     flex-direction: column;

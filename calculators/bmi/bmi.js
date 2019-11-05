@@ -7,12 +7,19 @@ bmiBtn.addEventListener(("click"), () => calculateBmi());
 
 function calculateBmi () {
 
+    
     let weight = document.getElementById("weight_input").value;
     let height = document.getElementById("height_input").value;
     bmi = weight / (height/100)**2
+    
+    if (weight == "" || height == "") {
+        document.getElementById("bmi_output").innerHTML = "Please fill all of the inputs";
+        document.getElementById("bmi_output_def").innerHTML = "";
+    }
+    else {
 
-    document.getElementById("bmi_output").innerHTML = "Your BMI is: " + bmi;
-
+    document.getElementById("bmi_output").innerHTML = "Your BMI is: " + parseFloat(bmi).toFixed(2);
+    
     if (bmi < 18.4) {
         document.getElementById("bmi_output_def").innerHTML = "That makes you: Underweight";
     }
@@ -22,8 +29,12 @@ function calculateBmi () {
     else if (bmi < 29.9) {
         document.getElementById("bmi_output_def").innerHTML = "That makes you: Overweight";
     }
+    else if (bmi > 100) {
+        document.getElementById("bmi_output_def").innerHTML = "That's pretty unrealistic, please check your input"
+    }
     else {
         document.getElementById("bmi_output_def").innerHTML = "That makes you: Obese;"
+    }
     }
     
 

@@ -181,7 +181,8 @@ const muscles = {
 };
 
 //Brainfuck function
-function assignExercises(nrOfDays) {
+function assignExercises() {
+    let nrOfDays = document.getElementById("days").value;
     let days = {};   
     let availableMuscles = []
     for(i in muscles) {
@@ -212,13 +213,11 @@ function assignExercises(nrOfDays) {
         }
         while(new Set(randomExercises).size > 10) {
             randomExercises.splice(Math.floor(Math.random()*randomExercises.length), 1)
-            console.log(new Set(randomExercises).size)
         }
         days[day].exercises = Array.from(new Set(randomExercises))
     }
+    console.log(days)
 }
 
-let nrOfDays = document.getElementById("days").value;
 let btnGenerate = document.getElementById("generate");
-
-btnGenerate.addEventListener("click", assignExercises(nrOfDays))
+btnGenerate.addEventListener("click", assignExercises)

@@ -180,6 +180,8 @@ const muscles = {
     forearms:"Forearms"
 };
 
+let unChecked = []
+
 let exerciseList = document.getElementById("exercises");
 for(i in exercises) {
     let newTitle = document.createElement("h2");
@@ -224,16 +226,19 @@ function updateList(e) {
     let id = e.id;
     let checkbox = document.getElementById(id);
     if(checkbox.checked) {
-        checkbox.parentElement.style.backgroundColor = "#003761"
+        checkbox.parentElement.style.backgroundColor = "#007163"
+        unChecked.splice(unChecked.indexOf(id), 1);
         for(i in exercises) {
             if(exercises[i]["muscles"].includes(id)) {
                 document.getElementById(i).style.display = "inline";
             }
         }
     } else {
-        checkbox.parentElement.style.backgroundColor = "rgba(0,55,97,0.5)"
+        checkbox.parentElement.style.backgroundColor = "rgba(0,113,99,0.5)"
+        unChecked.push(id);
         for(i in exercises) {
-            if(exercises[i]["muscles"].includes(id)) {
+            let muscles = exercises[i]["muscles"]
+            if(muscles.every(x => unChecked.includes(x))) {
                 document.getElementById(i).style.display = "none";
             }
         }

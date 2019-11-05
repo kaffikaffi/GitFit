@@ -47,10 +47,6 @@
     flex-direction: row;
 }
 .imageContainer{
-    background-image: url(../img/gradient.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: 10px;
     float: left;
     width: 30%;

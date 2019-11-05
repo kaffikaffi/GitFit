@@ -188,11 +188,11 @@ for(i in exercises) {
     newTitle.class = "exerciseTitle";
     newTitle.innerHTML = exercises[i]["name"];
 
-    //let newImage = document.createElement("img");
-    //newImage.src = exercises[i]["img"];
+    let newImage = document.createElement("img");
+    newImage.src = exercises[i]["img"];
     let newImageContainer = document.createElement("div");
     newImageContainer.className = "imageContainer";
-    //newImageContainer.appendChild(newImage);
+    newImageContainer.appendChild(newImage);
 
     let newDescription = document.createElement("div");
     newDescription.class = "description";

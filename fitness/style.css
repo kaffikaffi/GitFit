@@ -1,6 +1,9 @@
+h1{
+    text-align: center;
+}
 #content_tips{
     width: 60%;
-    min-height: 100vh;
+    height: auto;
     margin: auto;
 }
 .tipsDiv{

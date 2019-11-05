@@ -13,19 +13,19 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-#filter label, #filter input{
-    background-color: #4691A4;
+#filter label {
+    background-color: #003761;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
     text-align: center;
-}
-#filter label{
     width: 100px;
     height: 25px;
 }
+#filter input{
+    display: none;
+}
 #filter label:hover{
-    background-color: #007163;
     transform: scale(0.95);
 }
 

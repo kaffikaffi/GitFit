@@ -1,35 +1,4 @@
-let nrOfDays = document.getElementById("days");
-let btnGenerate = document.getElementById("generate");
-
-function assignExercises(nrOfDays, exercises, muscles) {
-    let days = [];
-    let returnArray = [];
-    for(let i=0; i<nrOfDays; i++) {
-        days.push([]);
-        returnArray.push([])
-    }
-
-    let i = 0;
-    while(muscles.length > 0) {
-        let randomMuscle = muscles[Math.floor(Math.random()*muscles.length)];
-        days[i%nrOfDays].push(randomMuscle);
-        muscles.splice(muscles.indexOf(randomMuscle), 1);
-        i++;
-    }
-
-    for(let day of days) {
-        for(let exercise in exercises) {
-            for(let muscle of exercises[exercise]) {
-                if(day.includes(muscle)) {
-                    returnArray[days.indexOf(day)].push(String(exercise));
-                }
-            }
-        }
-    }
-    return returnArray;
-}
-
-let exercises = {
+const exercises = {
     squat: {
         name: "Squat",
         muscles: ["calves","quadriceps","hamstrings","gluteus","hips","lower_back","abdominals"],
@@ -221,7 +190,7 @@ let exercises = {
     }
 };
 
-let muscles = [
+const muscles = [
     "calves",
     "quadriceps",
     "hamstrings",
@@ -236,6 +205,37 @@ let muscles = [
     "triceps",
     "biceps",
     "forearms"
-]
+];
 
-console.log(assignExercises(nrOfDays, exercises, muscles))
+function assignExercises(nrOfDays) {
+    let days = [];
+    let returnArray = [];
+    for(let i=0; i<nrOfDays; i++) {
+        days.push([]);
+        returnArray.push([])
+    }
+
+    let i = 0;
+    while(muscles.length > 0) {
+        let randomMuscle = muscles[Math.floor(Math.random()*muscles.length)];
+        days[i%nrOfDays].push(randomMuscle);
+        muscles.splice(muscles.indexOf(randomMuscle), 1);
+        i++;
+    }
+
+    for(let day of days) {
+        for(let exercise in exercises) {
+            for(let muscle of exercises[exercise]) {
+                if(day.includes(muscle)) {
+                    returnArray[days.indexOf(day)].push(String(exercise));
+                }
+            }
+        }
+    }
+    return returnArray;
+}
+
+let nrOfDays = document.getElementById("days").value;
+let btnGenerate = document.getElementById("generate");
+
+btnGenerate.addEventListener("input", assignExercises(nrOfDays))

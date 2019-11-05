@@ -1,42 +1,66 @@
-body {
-    background-color: #003761;
-}
-main {
-    position: absolute;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    background-color: lightgray;
-    color: #003761;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
 #title {
     text-align: center;
     font-size: 3em;  
 }
-
 #filter {
-    position: relative;
-    background-color: whitesmoke;
     width: 70%;
-    margin: 5% 10% 5% 10%;
-    padding: 5%;
+    min-height: 100px;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#filter label, #filter input{
+    background-color: #4691A4;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+#filter label{
+    width: 100px;
+    height: 25px;
+}
+#filter label:hover{
+    background-color: #007163;
+    transform: scale(0.95);
 }
 
 #exercises {
-    margin: 5% 10% 5% 10%;
-    padding: 5%;
+    margin: 5% 5% 5% 5%;
+    padding: 3%;
     background-color: whitesmoke;
-}
-
-.container {
-    position: relative;
     width: 70%;
-    height: 150px;
-    margin: 5% 10% 5% 10%;
-    padding: 5%;
-    background-color: lightgray;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.exercise{
+    min-width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.imageContainer{
+    background-image: url(../img/gradient.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    float: left;
+    width: 30%;
+    height: auto;
+}
+.description{
+    width: 70%;
+    height: auto;
+    text-align: justify;
+    padding:10px;
 }
 
 .media {

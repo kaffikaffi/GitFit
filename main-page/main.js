@@ -118,15 +118,32 @@ function createTile(array) {
       let icon = document.createElement("img");
       icon.setAttribute("class", "tile-icon");
       icon.setAttribute("src", element.icon);  
-      
+
+      let hover_div = document.createElement("div");
+      hover_div.style.width = "100%";
+      hover_div.style.height = "100%";
+      hover_div.style.zIndex = "100";
+      hover_div.setAttribute("class", "hover_div_style");
+
       tile.appendChild(image);
       tile.appendChild(icon);
+      tile.appendChild(hover_div);
+
       let display = document.createElement("h3");
       display.setAttribute("class", "tile-header");
       display.textContent = element.display;
       tile.appendChild(display);
       TILE_DIV.appendChild(tile);
-      tile.addEventListener("click", () => image.classList.toggle("tile-image-rotate"));
+
+      hover_div.addEventListener("mouseover", () =>{
+        image.classList.toggle("tile-image-rotate");
+        tile.classList.toggle("tile-style-hover");
+      });
+      hover_div.addEventListener("mouseleave", () =>{
+        image.classList.toggle("tile-image-rotate");
+        tile.classList.toggle("tile-style-hover");
+      });
+     // hover_div.addEventListener("mouseleave", () => image.classList.toggle("tile-image-rotate"));
       
     });
   }

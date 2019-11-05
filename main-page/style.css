@@ -115,11 +115,14 @@ height: 500px;
     margin: auto;
     width: 400px;
     height: 300px;
-    border-radius: 3px;
+    border-radius: 6px;
     margin-top: 50px;
     text-align: center;
     background-color: #c4c4c4;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.tile-style-hover{
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.4);;
 }
 .tile-image{
     margin: auto;
@@ -139,6 +142,12 @@ height: 500px;
 .tile-image-rotate{
     transform: rotate(180deg);
 }
+.hover_div_style{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -58%;
+}
 .tile-header{
     color: hsl(206, 100% ,95%); 
     font-family: Helvetica, Arial, sans-serif;
@@ -149,7 +158,7 @@ height: 500px;
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: -48%;
+    margin-top: -66%;
 }
 #tile-container{
     display: grid;

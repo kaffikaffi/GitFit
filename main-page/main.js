@@ -143,7 +143,6 @@ function createTile(array) {
         image.classList.toggle("tile-image-rotate");
         tile.classList.toggle("tile-style-hover");
       });
-     // hover_div.addEventListener("mouseleave", () => image.classList.toggle("tile-image-rotate"));
       
     });
   }

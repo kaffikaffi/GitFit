@@ -5,13 +5,19 @@ maxpulseBtn.addEventListener("click", () => maxpulseNormal());
 
 function maxpulseNormal() {
     let age = document.getElementById("age_input").value;
+    let gender = document.querySelector("input[name=maxpulse_gender]:checked").value;
     maxpulse = 206.9 - (0.67*age);
     
     if (age == "") {
         document.getElementById("maxpulse_output").innerHTML = "Please fill in your age";
     }
     else {
-    document.getElementById("maxpulse_output").innerHTML = "Your max pulse is: " + maxpulse;
+        if(gender === "male"){
+            document.getElementById("maxpulse_output").innerHTML = "Your max pulse is: " + parseFloat(maxpulse).toFixed(2);
+        }
+        else if(gender === "female") {
+            document.getElementById("maxpulse_output").innerHTML = "Your max pulse is: " + parseFloat(maxpulse+2.45).toFixed(2);
+        }
     }
 }
 
@@ -20,10 +26,9 @@ let maxpulse2 = 0;
 const maxpulseBtn2 = document.getElementById("maxpulse_btn2");
 maxpulseBtn2.addEventListener("click", () => maxpulseAthlete());
 
-
 function maxpulseAthlete() {
     let age2 = document.getElementById("age_input2").value;
-    let gender = document.querySelector("input[name=maxpulse_gender]:checked").value;
+    let gender2 = document.querySelector("input[name=maxpulse_gender2]:checked").value;
     maxpulseMen = 202 - (0.55 * age2);
     maxpulseWomen = 216 - (1.09 * age2);
 
@@ -32,10 +37,10 @@ function maxpulseAthlete() {
     }
 
     else {
-    if (gender === "male") {
+    if (gender2 === "male") {
         document.getElementById("maxpulse_output2").innerHTML = "Your max pulse is: " + parseFloat(maxpulseMen).toFixed(2);
     }
-    else if (gender === "female") {
+    else if (gender2 === "female") {
         document.getElementById("maxpulse_output2").innerHTML = "Your max pulse is: " + parseFloat(maxpulseWomen).toFixed(2);
     }
 }

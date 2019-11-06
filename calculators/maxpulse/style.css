@@ -59,6 +59,7 @@ h1 {
     margin-top: 100px;
     margin-bottom: 50px;
     width: 270px;
+    color:#003761;
 
 }
 #all {
@@ -71,6 +72,7 @@ h1 {
 }
 .calculator_div {
     margin: auto;
+    margin-top: 0px;
     width: 40%;
     padding: 10px 10px;
     border: solid 2px #003761 ;

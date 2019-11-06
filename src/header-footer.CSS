@@ -41,6 +41,7 @@ footer{
     height: 100px;
 }
 #footer_social a{
+    text-decoration: none;
     display:inline-flex;
     width:45px;
     height:45px;
@@ -62,6 +63,7 @@ footer{
     transition:0.2s all;
 }
 #footer_contactlink{
+    text-decoration: none;
     color: white;
     padding: 5px;
     font-size: 20px;
@@ -105,12 +107,15 @@ header{
     flex-direction: row;
     justify-content: left;
     flex-grow: 1;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
 }
 .nav-li{
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
+    /*margin-left: 10px;
+    margin-right: 10px;*/
     color: #003761;
 }
 #logo{
@@ -142,11 +147,26 @@ nav{
     font-size: 18px; /* should we not use px?*/ 
     flex-grow: 1;
     margin: 10px;
+    margin-left: 0;
     border-radius: 3px;
+    cursor: pointer;
 }
-a{
+.header-links{
     text-decoration: none;
     color: #003761;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header-links:hover{
+    background-color: rgba(0, 0, 0, 0.04);
+    transition: ease-in;
+    transition-duration: 150ms;
 }
 .bar{
     display: none;
@@ -177,12 +197,11 @@ a{
         margin-right: 10px;
     }
     .nav-ul{
-        padding-top: 5rems;
         padding-left: 0;
         position: absolute;
         right: 0px;
         height: 50vh; /*92vh*/
-        top: 35px;
+        top: 55px;
         background: #003761;
         display: flex;
         flex-direction: column;
@@ -194,7 +213,8 @@ a{
     .nav-ul-motion{
         transform: translateX(0%);
     }
-    a{
+    .header-links{
+        color: white;
         display: flex;
         flex-grow: 1;
         height: 100%;

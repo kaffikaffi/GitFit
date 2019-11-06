@@ -75,6 +75,7 @@ function createHeaderElements(){
       let li = document.createElement("li");
       li.setAttribute("class", "nav-li");
       let a = document.createElement("a");
+      a.setAttribute("class","header-links");
       a.textContent = element;
       a.setAttribute("href", "../"+element.toLowerCase() + "/"+ element.toLowerCase() + ".html") //Fix so that it only uses lower-letters
       li.appendChild(a); //is it even nessecary with a-tags? 

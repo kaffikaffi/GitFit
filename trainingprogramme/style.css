@@ -1,0 +1,36 @@
+h1,h2{
+    text-align: center;
+}
+#input{
+    height: auto;
+    width: auto;
+    margin: 10px auto;
+}
+#output{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.divDay{
+    text-align: left;
+    padding: 15px;
+    background-color: whitesmoke;
+    margin: 15px;
+    width: 170px;
+}
+.muscle_ul{
+    height: 60px;
+}
+#generate{
+    background: #007163;
+	padding: 6px;
+	border: none;
+	color: #fff;
+}
+#generate:hover{
+    background: #4691A4;
+}

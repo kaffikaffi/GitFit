@@ -75,7 +75,7 @@ let tile_array = [
   tile3 = {
     name: "library",
     display:"The best exercises",
-    src: "../library-page/library-page.html",
+    src: "../library/library.html",
     img: "../img/gradient.png",
     icon: "../img/icons/library.png"
   },
@@ -89,7 +89,7 @@ let tile_array = [
   tile5 = {
     name: "program",
     display:"Generate program",
-    src: "../program-page/program.html",
+    src: "../trainingprogramme/trainingprogramme.html",
     img: "../img/gradient.png",
     icon: "../img/icons/program.png"
   },

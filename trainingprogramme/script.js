@@ -231,6 +231,7 @@ function assignExercises() {
         newTitle.innerHTML = "Day " + day;
 
         let newMuscles = document.createElement("ul");
+        newMuscles.setAttribute("class","muscle_ul")
         for(muscle of days[day]["muscles"]) {
             let newMuscle = document.createElement("li");
             newMuscle.innerHTML = muscles[muscle];
@@ -245,7 +246,7 @@ function assignExercises() {
         }
 
         let newDay = document.createElement("div");
-        newDay.className = day;
+        newDay.className = "divDay";
         let t1 = document.createElement("h3");
         let t2 = document.createElement("h3")
         t1.innerHTML = "Muscles:";

@@ -1,0 +1,67 @@
+#title {
+    text-align: center;
+    font-size: 3em;  
+}
+#filter {
+    width: 70%;
+    min-height: 100px;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#filter label {
+    background-color: #007163;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+}
+#filter input{
+    display: none;
+}
+#filter label:hover{
+    transform: scale(0.95);
+}
+
+#exercises {
+    margin: 5% 5% 5% 5%;
+    padding: 3%;
+    background-color: whitesmoke;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.exercise{
+    min-width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.imageContainer{
+    margin: 10px;
+    float: left;
+    width: 30%;
+    height: auto;
+}
+.description{
+    width: 70%;
+    height: auto;
+    text-align: justify;
+    padding:10px;
+}
+
+.media {
+    position: relative;
+    height: 80%;
+    width: 20%;
+    margin: 10% 70% 10% 10%;
+}

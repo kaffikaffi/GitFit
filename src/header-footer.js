@@ -66,7 +66,8 @@ function createHeaderElements(){
     "Fitness",
     "Trainingprogramme",
     "Supplements",
-    "Calculators"
+    "Calculators",
+    "Library"
   ];
   
   function renderHeader(ul,array,header){

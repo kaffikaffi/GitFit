@@ -191,19 +191,21 @@ for(i in exercises) {
     newImageContainer.appendChild(newImage);
 
     let newTitle = document.createElement("h2");
-    newTitle.class = "exerciseTitle";
+    newTitle.className = "exerciseTitle";
     newTitle.innerHTML = exercises[i]["name"];
-
     let newDescription = document.createElement("div");
-    newDescription.setAttribute("class","description");
+    newDescription.className = "description";
     newDescription.innerHTML = exercises[i]["description"];
+    let newTextContainer = document.createElement("div");
+    newTextContainer.className = "textContainer";
+    newTextContainer.appendChild(newTitle)
+    newTextContainer.appendChild(newDescription)
 
     let newExercise = document.createElement("div");
     newExercise.id = i;
     newExercise.setAttribute("class","exercise_div");
     newExercise.appendChild(newImageContainer);
-    newExercise.appendChild(newTitle);
-    newExercise.appendChild(newDescription);
+    newExercise.appendChild(newTextContainer);
     exerciseList.appendChild(newExercise);
 }
 
@@ -234,10 +236,10 @@ function updateList(e) {
             }
         }
     } else {
-        checkbox.parentElement.style.backgroundColor = "rgba(0,113,99,0.5)"
+        checkbox.parentElement.style.backgroundColor = "rgba(0,113,99,0.5)";
         unChecked.push(id);
         for(i in exercises) {
-            let muscles = exercises[i]["muscles"]
+            let muscles = exercises[i]["muscles"];
             if(muscles.every(x => unChecked.includes(x))) {
                 document.getElementById(i).style.display = "none";
             }

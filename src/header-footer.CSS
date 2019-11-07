@@ -4,6 +4,10 @@ html,body{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	height: 100%;
 }
+h1{
+    text-align: center;
+    font-size: 200%;
+}
 #body{
 	min-height: 100vh;
   	display: flex;
@@ -114,8 +118,6 @@ header{
 }
 .nav-li{
     display: flex;
-    /*margin-left: 10px;
-    margin-right: 10px;*/
     color: #003761;
 }
 #logo{
@@ -144,7 +146,7 @@ nav{
     border: none;
     background-color: #003761;
     color: white;
-    font-size: 18px; /* should we not use px?*/ 
+    font-size: 18px;
     flex-grow: 1;
     margin: 10px;
     margin-left: 0;

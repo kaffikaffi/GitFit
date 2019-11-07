@@ -1,30 +1,9 @@
-html,body{
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-main{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 0;
-    margin-top: 55px;
-}
-h1,h2,p{
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
-}
-h1{
-    text-align: center;
-    padding-bottom: 2rem;
-}
 .supp-section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
     height: auto;
-    /*margin: 1.5rem auto;*/ 
     margin: 1rem auto;
     padding-bottom: 2rem;
     border-bottom: 0.1168rem solid rgba(0,55,97,0.5);

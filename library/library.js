@@ -195,12 +195,12 @@ for(i in exercises) {
     newImageContainer.appendChild(newImage);
 
     let newDescription = document.createElement("div");
-    newDescription.class = "description";
+    newDescription.setAttribute("class","description");
     newDescription.innerHTML = exercises[i]["description"];
 
     let newExercise = document.createElement("div");
     newExercise.id = i;
-    newExercise.class = "exercise";
+    newExercise.setAttribute("class","exercise_div");
     newExercise.appendChild(newTitle);
     newExercise.appendChild(newImageContainer);
     newExercise.appendChild(newDescription);

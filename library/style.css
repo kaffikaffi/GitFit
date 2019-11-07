@@ -3,12 +3,12 @@
     font-size: 3em;  
 }
 #filter {
+    margin: 0 10% 0 10%;
     width: 70%;
-    min-height: 100px;
     height: auto;
-    margin: 10px auto;
-    padding: 10px;
+    width: auto;
     display: flex;
+    flex-direction: column;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,23 +30,18 @@
 }
 
 #exercises {
-    margin: 5% 5% 5% 5%;
-    padding: 3%;
+    margin: 5% 10% 5% 10%;
+    padding: 5%;
     background-color: whitesmoke;
     width: 70%;
     height: auto;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
-}
-.exercise{
-    min-width:100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
 }
 .exercise_div{
+    margin: 2.5%;
+    padding: 2.5%;
+    background-color: lightgray;
     display: flex;
     flex-direction: row;
     width: 100%;

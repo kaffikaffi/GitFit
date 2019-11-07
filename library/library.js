@@ -184,15 +184,15 @@ let unChecked = []
 
 let exerciseList = document.getElementById("exercises");
 for(i in exercises) {
-    let newTitle = document.createElement("h2");
-    newTitle.class = "exerciseTitle";
-    newTitle.innerHTML = exercises[i]["name"];
-
     let newImage = document.createElement("img");
     newImage.src = exercises[i]["img"];
     let newImageContainer = document.createElement("div");
     newImageContainer.className = "imageContainer";
     newImageContainer.appendChild(newImage);
+
+    let newTitle = document.createElement("h2");
+    newTitle.class = "exerciseTitle";
+    newTitle.innerHTML = exercises[i]["name"];
 
     let newDescription = document.createElement("div");
     newDescription.setAttribute("class","description");
@@ -201,8 +201,8 @@ for(i in exercises) {
     let newExercise = document.createElement("div");
     newExercise.id = i;
     newExercise.setAttribute("class","exercise_div");
-    newExercise.appendChild(newTitle);
     newExercise.appendChild(newImageContainer);
+    newExercise.appendChild(newTitle);
     newExercise.appendChild(newDescription);
     exerciseList.appendChild(newExercise);
 }

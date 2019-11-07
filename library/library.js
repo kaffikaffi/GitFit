@@ -232,7 +232,7 @@ function updateList(e) {
         unChecked.splice(unChecked.indexOf(id), 1);
         for(i in exercises) {
             if(exercises[i]["muscles"].includes(id)) {
-                document.getElementById(i).style.display = "inline";
+                document.getElementById(i).style.display = "";
             }
         }
     } else {

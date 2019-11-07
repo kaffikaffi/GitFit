@@ -34,6 +34,9 @@ footer{
     width: 25%;
     height: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    color:white;
 }
 #footer_social{
     width: 50%;
@@ -71,11 +74,39 @@ footer{
     color: white;
     padding: 5px;
     font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
     display: inline-block;
-    text-align: center;
-    margin:0 auto;
-    margin-top: 30px;
 }
+#div_contact{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    align-content: center;
+}
+#div_credit{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-size: 12px;
+    align-content: center;
+    color: white;
+    text-decoration: none;;
+}
+#div_credit p{
+    display: inline;
+    color: white;
+    text-decoration: none;;
+}
+#div_credit a:link{
+    color: white;
+    text-decoration: underline;
+}
+#div_credit a:visited{
+    color: white;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 822px) {
     footer{
 	    width: 100%;
@@ -91,6 +122,13 @@ footer{
     #footer_social a{
         margin-top: 0;
     }
+    #footer_contactlink{
+        margin-top: 0px;
+    }
+    #footer_contact{
+        width: 100%;
+    }
+
 }
 
 /* HEADER */ 

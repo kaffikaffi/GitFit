@@ -8,10 +8,10 @@ const images = [
 ];
 
 const imagetext = [
-  "Velkommen1",
-  "Velkommen2",
-  "Velkommen3",
-  "Velkommen4"
+  "Find new Exercices",
+  "Find tips in our Guide",
+  "Calculate your Goals",
+  "Register an Account"
 ];
 
 const dots = [
@@ -150,28 +150,35 @@ function createTile(array) {
 
   createTile(tile_array);
 
-  //<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  //<div>Icons made by <a href="https://www.flaticon.com/authors/freepik"> Freepik</a> from <a href="https://www.flaticon.com/"> www.flaticon.com</a></div>
 
-/* 
+/*
 function credit() {
   const footer = document.getElementById("footer");
   let div = document.createElement("div");
   let a_author = document.createElement("a");
   let a_source = document.createElement("a");
-  a_author= "Freepik";
-  a_author.setAttribute("href", "https://www.flaticon.com/authors/freepik");
-  div.appendChild(a_author);
-
+  
   a_source.setAttribute("href","https://www.flaticon.com/");
-  a_source.textContent = "www.flaticon.com";
+  a_source.textContent = " www.flaticon.com";
+
+  a_author.setAttribute("href", "https://www.flaticon.com/authors/freepik");
+  a_author.textContent = " Freepik";
+  let p1 = document.createElement("p");
+  p1.textContent = "Icons made by "
+
+  div.appendChild(p1);
+  div.appendChild(a_author);
+  let p2 = document.createElement("p");
+  p2.textContent = " from"
+  div.appendChild(p2);
   div.appendChild(a_source);
-  div.textContent = ("Icons made by " + a_author + "from" + a_source);
   footer.appendChild(div);
 
 }
 window.onload = credit;
 
-*/ 
+ */ 
 
 
 //tile rendering end

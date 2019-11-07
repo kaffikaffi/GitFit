@@ -156,10 +156,41 @@ function renderFooter(){
     aTagContact.textContent = "Contact Us";
     sectionContact.appendChild(aTagContact)
 
+
     let sectionSocial = document.createElement("section");
     sectionSocial.setAttribute("id","footer_social");
     sectionSocial.setAttribute("class","footer_section");
     footerElement.appendChild(sectionSocial);
+
+    let sectionCredit = document.createElement("section");
+    sectionCredit.setAttribute("class", "footer_section");
+    sectionCredit.setAttribute("id", "footer_credit")
+    footerElement.appendChild(sectionCredit)
+
+
+    let div = document.createElement("div");
+    div.setAttribute("class", "footer_credit_div");
+    let a_author = document.createElement("a");
+    let a_source = document.createElement("a");
+    
+    a_source.setAttribute("href","https://www.flaticon.com/");
+    a_source.textContent = " www.flaticon.com";
+  
+    a_author.setAttribute("href", "https://www.flaticon.com/authors/freepik");
+    a_author.textContent = " Freepik";
+    let p1 = document.createElement("p");
+    p1.textContent = "Icons made by "
+  
+    div.appendChild(p1);
+    div.appendChild(a_author);
+    let p2 = document.createElement("p");
+    p2.textContent = " from"
+    div.appendChild(p2);
+    div.appendChild(a_source);
+    sectionCredit.appendChild(div);
+    
+
+    
     const miniLogos = [
         "fa fa-instagram",
         "fa fa-github",

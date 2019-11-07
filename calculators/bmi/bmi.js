@@ -41,3 +41,9 @@ function calculateBmi () {
     console.log("hei");
 
 }
+
+document.body.onkeyup = function(e) {      
+    if (e.keyCode == 13) {
+        calculateBmi();
+    }
+    };

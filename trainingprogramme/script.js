@@ -260,6 +260,12 @@ function assignExercises() {
     }
 }
 
+document.body.onkeyup = function(e) {      //It's easier to call the function assignExercises()(and all the other onkeyup-functions on the site) by pressing (and releasing) the enter button than to constantly use the mouse clicker
+    if (e.keyCode == 13) {
+        assignExercises();
+    }
+    };
+
 let btnGenerate = document.getElementById("generate");
 let output = document.getElementById("output");
 btnGenerate.addEventListener("click", assignExercises);

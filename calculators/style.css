@@ -55,11 +55,6 @@
     margin-top: -58%;
     position: relative;
 }
-
-#logo-image {
-    width: 55px;
-    height: 50px;
-}
 .tile-image-rotate {
     transform: rotate(180deg);
     cursor: pointer;

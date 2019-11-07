@@ -15,7 +15,16 @@ function createHeaderElements(){
     logo_div.setAttribute("class", "logo");
     
     let a = document.createElement("a");
-    a.setAttribute("href","../main-page/index.html");
+    let currentLocation = window.location.href;
+      let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
+      let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
+      let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
+      let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
+      if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
+        a.setAttribute("href","../../main-page/index.html");} 
+      else{
+        a.setAttribute("href","../main-page/index.html");
+      }
     
     let img = document.createElement("img");
     img.setAttribute("src","../img/gitfit-slogo.svg");
@@ -84,8 +93,11 @@ function createHeaderElements(){
       a.setAttribute("class","header-links");
       a.textContent = element;
       let currentLocation = window.location.href;
-      let fixedUrl =""
-      if(currentLocation == fixedUrl){
+      let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
+      let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
+      let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
+      let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
+      if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
         a.setAttribute("href", "../../"+element.toLowerCase() + "/"+ element.toLowerCase() + ".html");
       }
       else{
@@ -100,8 +112,17 @@ function createHeaderElements(){
   
     createButton("Log in", "login_btn",LOGIN_DIV);
     createButton("Register", "register_btn", LOGIN_DIV);
-    document.getElementById("register_btn").addEventListener("click" , () => window.location.href = "../register-page/register.html");
-  }
+    let currentLocation = window.location.href;
+    let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
+    let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
+    let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
+    let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
+      if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
+        document.getElementById("register_btn").addEventListener("click" , () => window.location.href = "../../register-page/register.html");      }
+      else{
+        document.getElementById("register_btn").addEventListener("click" , () => window.location.href = "../register-page/register.html");
+      }
+ }
   
   renderHeader(UL_ELEMENT,nav_array)
   
@@ -168,7 +189,17 @@ function renderFooter(){
     sectionContact.appendChild(divContact);
     let aTagContact = document.createElement("a");
     aTagContact.setAttribute("id","footer_contactlink");
-    aTagContact.setAttribute("href","../contact-page/contact.html");
+    let currentLocation = window.location.href;
+    let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
+    let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
+    let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
+    let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
+      if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
+        aTagContact.setAttribute("href","../../contact-page/contact.html");
+      }
+      else{
+        aTagContact.setAttribute("href","../contact-page/contact.html");
+      }
     aTagContact.textContent = "Contact Us";
     divContact.appendChild(aTagContact)
 
@@ -185,9 +216,16 @@ function renderFooter(){
         "fa fa-youtube",
         "fa fa-stack-overflow"
     ]
-    miniLogos.forEach(element => {
+    miniLogos.forEach((element,index) => {
+      const hrefLogo = [
+        "https://www.instagram.com",
+        "https://www.twitter.com",
+        "https://www.facebook.com",
+        "https://www.youtube.com",
+        "https://www.stackoverflow.com"
+      ]
         let a = document.createElement("a");
-        a.setAttribute("href","#");
+        a.setAttribute("href",hrefLogo[index]);
         let i = document.createElement("i");
         i.setAttribute("class",element);
         a.appendChild(i);

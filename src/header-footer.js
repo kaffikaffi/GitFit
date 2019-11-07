@@ -50,7 +50,7 @@ function createHeaderElements(){
     nav.appendChild(DIV_CONTAINER); 
     nav.appendChild(hamburger);
     header.appendChild(nav);
-    BODY.appendChild(header)
+    BODY.prepend(header)
   }
   createHeaderElements()
   //Where should global variables be declared? 

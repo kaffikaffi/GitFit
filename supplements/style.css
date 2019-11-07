@@ -2,11 +2,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*margin-top: 3rem !important;*/
     width: 60%;
     height: auto;
-    margin: 1.5rem auto;
+    /*margin: 1.5rem auto;*/ 
+    margin: 1rem auto;
+    padding-bottom: 2rem;
     border-bottom: 0.1168rem solid rgba(0,55,97,0.5);
+}
+.supp-section:last-child{
+    border-bottom: none;
 }
 .supp-img{
   width: 128px;

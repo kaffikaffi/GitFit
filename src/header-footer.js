@@ -1,5 +1,11 @@
 
 function createHeaderElements(){
+    const lin2 = document.createElement("link");
+    lin2.setAttribute("rel","icon");
+    lin2.setAttribute("href","../img/gitfit-favicon.png");
+    document.getElementsByTagName("head")[0].appendChild(lin2);
+
+    
     const BODY = document.getElementById("body");
     let header = document.createElement("header");
     let nav = document.createElement("nav");
@@ -77,7 +83,14 @@ function createHeaderElements(){
       let a = document.createElement("a");
       a.setAttribute("class","header-links");
       a.textContent = element;
-      a.setAttribute("href", "../"+element.toLowerCase() + "/"+ element.toLowerCase() + ".html") //Fix so that it only uses lower-letters
+      let currentLocation = window.location.href;
+      let fixedUrl =""
+      if(currentLocation == fixedUrl){
+        a.setAttribute("href", "../../"+element.toLowerCase() + "/"+ element.toLowerCase() + ".html");
+      }
+      else{
+        a.setAttribute("href", "../"+element.toLowerCase() + "/"+ element.toLowerCase() + ".html");
+      }
       li.appendChild(a); //is it even nessecary with a-tags? 
       ul.appendChild(li); // Fix Styling a-tags
     });
@@ -150,11 +163,14 @@ function renderFooter(){
     sectionContact.setAttribute("id","footer_contact");
     sectionContact.setAttribute("class","footer_section");
     footerElement.appendChild(sectionContact);
+    let divContact = document.createElement("div");
+    divContact.setAttribute("id","div_contact");
+    sectionContact.appendChild(divContact);
     let aTagContact = document.createElement("a");
     aTagContact.setAttribute("id","footer_contactlink");
     aTagContact.setAttribute("href","../contact-page/contact.html");
     aTagContact.textContent = "Contact Us";
-    sectionContact.appendChild(aTagContact)
+    divContact.appendChild(aTagContact)
 
 
     let sectionSocial = document.createElement("section");
@@ -162,39 +178,10 @@ function renderFooter(){
     sectionSocial.setAttribute("class","footer_section");
     footerElement.appendChild(sectionSocial);
 
-    let sectionCredit = document.createElement("section");
-    sectionCredit.setAttribute("class", "footer_section");
-    sectionCredit.setAttribute("id", "footer_credit")
-    footerElement.appendChild(sectionCredit)
-
-
-    let div = document.createElement("div");
-    div.setAttribute("class", "footer_credit_div");
-    let a_author = document.createElement("a");
-    let a_source = document.createElement("a");
-    
-    a_source.setAttribute("href","https://www.flaticon.com/");
-    a_source.textContent = " www.flaticon.com";
-  
-    a_author.setAttribute("href", "https://www.flaticon.com/authors/freepik");
-    a_author.textContent = " Freepik";
-    let p1 = document.createElement("p");
-    p1.textContent = "Icons made by "
-  
-    div.appendChild(p1);
-    div.appendChild(a_author);
-    let p2 = document.createElement("p");
-    p2.textContent = " from"
-    div.appendChild(p2);
-    div.appendChild(a_source);
-    sectionCredit.appendChild(div);
-    
-
-    
     const miniLogos = [
         "fa fa-instagram",
-        "fa fa-github",
-        "fa fa-reddit",
+        "fa fa-twitter",
+        "fa fa-facebook",
         "fa fa-youtube",
         "fa fa-stack-overflow"
     ]
@@ -206,7 +193,6 @@ function renderFooter(){
         a.appendChild(i);
         sectionSocial.appendChild(a);
     });
-
     let sectionLogo = document.createElement("section");
     sectionLogo.setAttribute("id","footer_logo");
     sectionLogo.setAttribute("class","footer_section");
@@ -218,6 +204,46 @@ function renderFooter(){
     imgTag.setAttribute("width","100");
     imgTag.setAttribute("height","100");
     sectionLogo.appendChild(imgTag);
+/** 
+    let sectionCredit = document.createElement("section");
+    sectionCredit.setAttribute("class", "footer_section");
+    sectionCredit.setAttribute("id", "footer_credit")
+    footer_contact.appendChild(sectionCredit)
+*/
+
+    let divCredit = document.createElement("div");
+    divCredit.setAttribute("id", "div_credit");
+    
+    let a_author = document.createElement("a");
+    let a_source = document.createElement("a");
+    
+    a_source.setAttribute("href","https://www.flaticon.com/");
+    a_source.textContent = " www.flaticon.com ";
+  
+    a_author.setAttribute("href", "https://www.flaticon.com/authors/freepik");
+    a_author.textContent = " Freepik";
+    let p1 = document.createElement("p");
+    p1.textContent = "Icons made by "
+    let p2 = document.createElement("p");
+    p2.textContent = " from"
+    divCredit.appendChild(p1);
+    divCredit.appendChild(a_author);
+    divCredit.appendChild(p2);
+    divCredit.appendChild(a_source);
+    sectionContact.appendChild(divCredit);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

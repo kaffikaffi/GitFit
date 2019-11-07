@@ -8,10 +8,10 @@ const images = [
 ];
 
 const imagetext = [
-  "Velkommen1",
-  "Velkommen2",
-  "Velkommen3",
-  "Velkommen4"
+  "Find new Exercices",
+  "Find tips in our Guide",
+  "Calculate your Goals",
+  "Register an Account"
 ];
 
 const dots = [

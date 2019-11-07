@@ -1,13 +1,3 @@
-body{
-    width: 100%;
-    min-height: auto;
-    margin: auto;
-}
-#main_container {
-    height: 100%;
-    width: 80%;
-    margin: auto;
-}
 #bmi_list {
 	margin:10px auto;
 	max-width: 400px;
@@ -15,18 +5,18 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
 }
-ul li {
+.list_maxpuls li {
 	padding: 0;
 	display: block;
 	list-style: none;
 }
-ul label{
+.list_maxpuls label{
 	margin:0 0 3px 0;
 	padding: 0px;
 	display:block;
 	font-weight: bold;
 }
-ul input,textarea{
+.list_maxpuls input,textarea{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -35,32 +25,24 @@ ul input,textarea{
     margin:0px;
     outline: none;
 }
-ul input:focus, ul textarea:focus{
+.list_maxpuls input:focus, .list_maxpuls textarea:focus{
 	-moz-box-shadow: 0 0 8px #4691A4;
 	-webkit-box-shadow: 0 0 8px #4691A4;
 	box-shadow: 0 0 8px #4691A4;
 	border: 1px solid #4691A4;
 }
-ul input[type=submit]{
+.list_maxpuls input[type=submit]{
 	background: #007163;
 	padding: 8px 15px 8px 15px;
 	border: none;
     color: #fff;
     margin-bottom: 20px;
 }
-ul input[type=submit]:hover{
+.list_maxpuls input[type=submit]:hover{
 	background: #4691A4;
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
-}
-h1 {
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    width: 270px;
-    color:#003761;
-
 }
 #all {
     display: flex;
@@ -79,7 +61,7 @@ h1 {
     margin-bottom: 50px;
 }
 @media only screen and (max-width: 800px){
-ul input {
+.list_maxpuls input {
     width: 150px;
 }
 #all {

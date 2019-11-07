@@ -1,10 +1,13 @@
-h1,h2{
+#input{
     text-align: center;
 }
-#input{
-    height: auto;
-    width: auto;
-    margin: 10px auto;
+#input_days{
+	border:1px solid #BEBEBE;
+	padding: 10px;
+}
+#input_days:focus{
+	box-shadow: 0 0 8px #4691A4;
+    border: 1px solid #4691A4;
 }
 #output{
     display: flex;
@@ -21,9 +24,10 @@ h1,h2{
     background-color: whitesmoke;
     margin: 15px;
     width: 170px;
+    height: auto;
 }
 .muscle_ul{
-    height: 60px;
+    height: 90px;
 }
 #generate{
     background: #007163;

@@ -197,6 +197,14 @@ function assignExercises() {
         availableMuscles.push(i);
     }
 
+    while(true) {
+        if(Math.floor(availableMuscles.length/(nrOfDays)) > 5) {
+            availableMuscles.splice(Math.floor(Math.random()*availableMuscles.length), 1); 
+        } else {
+            break;
+        }
+    }
+
     for(let i=0; i<nrOfDays; i++) {
         let randomMuscles = [];
         let nrOfMuscles = Math.floor(availableMuscles.length/(nrOfDays-i));

@@ -15,6 +15,7 @@ function createHeaderElements(){
     logo_div.setAttribute("class", "logo");
     
     let a = document.createElement("a");
+    /*
     let currentLocation = window.location.href;
       let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
       let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
@@ -25,6 +26,9 @@ function createHeaderElements(){
       else{
         a.setAttribute("href","../main-page/index.html");
       }
+      */
+     a.setAttribute("href",checkUrl("../main-page/index.html"));
+
     
     let img = document.createElement("img");
     img.setAttribute("src","../img/gitfit-slogo.svg");
@@ -92,6 +96,7 @@ function createHeaderElements(){
       let a = document.createElement("a");
       a.setAttribute("class","header-links");
       a.textContent = element;
+      /*
       let currentLocation = window.location.href;
       let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
       let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
@@ -103,6 +108,9 @@ function createHeaderElements(){
       else{
         a.setAttribute("href", "../"+element.toLowerCase() + "/"+ element.toLowerCase() + ".html");
       }
+      */
+     a.setAttribute("href", checkUrl("../")+element.toLowerCase() + "/"+ element.toLowerCase() + ".html");
+
       li.appendChild(a); //is it even nessecary with a-tags? 
       ul.appendChild(li); // Fix Styling a-tags
     });
@@ -112,6 +120,7 @@ function createHeaderElements(){
   
     createButton("Log in", "login_btn",LOGIN_DIV);
     createButton("Register", "register_btn", LOGIN_DIV);
+  /*
     let currentLocation = window.location.href;
     let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
     let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
@@ -122,6 +131,9 @@ function createHeaderElements(){
       else{
         document.getElementById("register_btn").addEventListener("click" , () => window.location.href = "../register-page/register.html");
       }
+      */
+     document.getElementById("register_btn").addEventListener("click" , () => window.location.href = checkUrl("../register-page/register.html"));
+
  }
   
   renderHeader(UL_ELEMENT,nav_array)
@@ -189,6 +201,7 @@ function renderFooter(){
     sectionContact.appendChild(divContact);
     let aTagContact = document.createElement("a");
     aTagContact.setAttribute("id","footer_contactlink");
+    /*** 
     let currentLocation = window.location.href;
     let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
     let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
@@ -200,6 +213,8 @@ function renderFooter(){
       else{
         aTagContact.setAttribute("href","../contact-page/contact.html");
       }
+      */
+    aTagContact.setAttribute("href",checkUrl("../contact-page/contact.html"));
     aTagContact.textContent = "Contact Us";
     divContact.appendChild(aTagContact)
 
@@ -269,22 +284,22 @@ function renderFooter(){
     divCredit.appendChild(p2);
     divCredit.appendChild(a_source);
     sectionContact.appendChild(divCredit);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
-
-
 renderFooter();
+
+function checkUrl(url1){
+    let currentLocation = window.location.href;
+    let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
+    let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
+    let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
+    let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
+
+    if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
+      url2 = "../"+ url1
+      return url2
+    }
+    else{
+      return url1
+    }
+}

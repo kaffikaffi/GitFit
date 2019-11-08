@@ -57,6 +57,7 @@ changeImg(0);
 // tile rendering // 
 const TILE_DIV = document.getElementById("tile-container");
 
+//Array of objects with properties that decides the content on the tile.
 let tile_array = [
   tile1 = {
     name: "tips",
@@ -101,13 +102,12 @@ let tile_array = [
     icon: "../img/icons/register.png"
   }
 ];
-
+//function that renders the tiles based on the properties in the object. 
 function createTile(array) {
     array.forEach(element => {
       let tile = document.createElement("div");
       tile.setAttribute("class", "tile-style");
       tile.setAttribute("href", element.src)
-      //tile.style.backgroundImage = "url(" + `${element.img}` + ")";
       tile.style.cursor = "pointer";
       tile.addEventListener("click", () => window.location.href = element.src);
 
@@ -119,6 +119,7 @@ function createTile(array) {
       icon.setAttribute("class", "tile-icon");
       icon.setAttribute("src", element.icon);  
 
+      //hover_div is a div on top of the tile to make hovering-actions easier to manage. 
       let hover_div = document.createElement("div");
       hover_div.style.width = "100%";
       hover_div.style.height = "100%";
@@ -149,36 +150,5 @@ function createTile(array) {
 
 
   createTile(tile_array);
-
-  //<div>Icons made by <a href="https://www.flaticon.com/authors/freepik"> Freepik</a> from <a href="https://www.flaticon.com/"> www.flaticon.com</a></div>
-
-/*
-function credit() {
-  const footer = document.getElementById("footer");
-  let div = document.createElement("div");
-  let a_author = document.createElement("a");
-  let a_source = document.createElement("a");
-  
-  a_source.setAttribute("href","https://www.flaticon.com/");
-  a_source.textContent = " www.flaticon.com";
-
-  a_author.setAttribute("href", "https://www.flaticon.com/authors/freepik");
-  a_author.textContent = " Freepik";
-  let p1 = document.createElement("p");
-  p1.textContent = "Icons made by "
-
-  div.appendChild(p1);
-  div.appendChild(a_author);
-  let p2 = document.createElement("p");
-  p2.textContent = " from"
-  div.appendChild(p2);
-  div.appendChild(a_source);
-  footer.appendChild(div);
-
-}
-window.onload = credit;
-
- */ 
-
 
 //tile rendering end

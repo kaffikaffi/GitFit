@@ -63,42 +63,42 @@ let tile_array = [
     display: "Find the best tips",
     src: "../fitness/fitness.html",
     img: "../img/gradient.png",
-    icon: "../img/icon/fitness.png"
+    icon: "../img/icons/fitness.png"
   },
   tile2 = {
     name: "calcualtors",
     display:"Calculate your goals",
     src: "../calculators/calculators.html",
     img: "../img/gradient.png",
-    icon: "../img/icon/calculator.png"
+    icon: "../img/icons/calculator.png"
   },
   tile3 = {
     name: "library",
     display:"The best exercises",
     src: "../library/library.html",
     img: "../img/gradient.png",
-    icon: "../img/icon/library.png"
+    icon: "../img/icons/library.png"
   },
   tile4= {
     name: "supplements",
     display:"What supplements to use",
     src: "../supplements/supplements.html",
     img: "../img/gradient.png",
-    icon: "../img/icon/supplements.png"
+    icon: "../img/icons/supplements.png"
   },
   tile5 = {
     name: "program",
     display:"Generate program",
     src: "../trainingprogramme/trainingprogramme.html",
     img: "../img/gradient.png",
-    icon: "../img/icon/program.png"
+    icon: "../img/icons/program.png"
   },
   tile6 = {
     name: "register",
     display:"Register now",
     src: "../register-page/register.html",
     img: "../img/gradient.png",
-    icon: "../img/icon/register.png"
+    icon: "../img/icons/register.png"
   }
 ];
 

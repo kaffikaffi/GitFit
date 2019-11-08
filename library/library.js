@@ -210,6 +210,16 @@ for(i in exercises) {
 }
 
 let filter = document.getElementById("filter");
+let selectAll = document.createElement("button");
+let deselectAll = document.createElement("button");
+selectAll.id = "selectAll";
+deselectAll.id = "deselectAll";
+selectAll.innerHTML = "Select all";
+deselectAll.innerHTML = "Deselect all";
+selectAll.addEventListener("click", changeAll);
+deselectAll.addEventListener("click", changeAll);
+filter.appendChild(selectAll);
+filter.appendChild(deselectAll);
 for(i in muscles) {
     let newCheckbox = document.createElement("input");
     newCheckbox.type = "checkbox";
@@ -243,6 +253,20 @@ function updateList(e) {
             if(muscles.every(x => unChecked.includes(x))) {
                 document.getElementById(i).style.display = "none";
             }
+        }
+    }
+}
+
+function changeAll(e) {
+    if(e.target.id == "selectAll") {
+        for(i in muscles) {
+            document.getElementById(i).checked = true;
+            updateList(document.getElementById(i));
+        }
+    } else if(e.target.id == "deselectAll") {
+        for(i in muscles) {
+            document.getElementById(i).checked = false;
+            updateList(document.getElementById(i));
         }
     }
 }

@@ -63,42 +63,42 @@ let tile_array = [
     display: "Find the best tips",
     src: "../fitness/fitness.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/fitness.png"
+    icon: "../img/icon/fitness.png"
   },
   tile2 = {
     name: "calcualtors",
     display:"Calculate your goals",
     src: "../calculators/calculators.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/calculator.png"
+    icon: "../img/icon/calculator.png"
   },
   tile3 = {
     name: "library",
     display:"The best exercises",
     src: "../library/library.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/library.png"
+    icon: "../img/icon/library.png"
   },
   tile4= {
     name: "supplements",
     display:"What supplements to use",
     src: "../supplements/supplements.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/supplements.png"
+    icon: "../img/icon/supplements.png"
   },
   tile5 = {
     name: "program",
     display:"Generate program",
     src: "../trainingprogramme/trainingprogramme.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/program.png"
+    icon: "../img/icon/program.png"
   },
   tile6 = {
     name: "register",
     display:"Register now",
     src: "../register-page/register.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/register.png"
+    icon: "../img/icon/register.png"
   }
 ];
 
@@ -150,7 +150,7 @@ function createTile(array) {
 
   createTile(tile_array);
 
-  //<div>Icons made by <a href="https://www.flaticon.com/authors/freepik"> Freepik</a> from <a href="https://www.flaticon.com/"> www.flaticon.com</a></div>
+  //<div>Icon made by <a href="https://www.flaticon.com/authors/freepik"> Freepik</a> from <a href="https://www.flaticon.com/"> www.flaticon.com</a></div>
 
 /*
 function credit() {
@@ -165,7 +165,7 @@ function credit() {
   a_author.setAttribute("href", "https://www.flaticon.com/authors/freepik");
   a_author.textContent = " Freepik";
   let p1 = document.createElement("p");
-  p1.textContent = "Icons made by "
+  p1.textContent = "Icon made by "
 
   div.appendChild(p1);
   div.appendChild(a_author);

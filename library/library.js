@@ -210,16 +210,7 @@ for(i in exercises) {
 }
 
 let filter = document.getElementById("filter");
-let selectAll = document.createElement("button");
-let deselectAll = document.createElement("button");
-selectAll.id = "selectAll";
-deselectAll.id = "deselectAll";
-selectAll.innerHTML = "Select all";
-deselectAll.innerHTML = "Deselect all";
-selectAll.addEventListener("click", changeAll);
-deselectAll.addEventListener("click", changeAll);
-filter.appendChild(selectAll);
-filter.appendChild(deselectAll);
+
 for(i in muscles) {
     let newCheckbox = document.createElement("input");
     newCheckbox.type = "checkbox";
@@ -233,6 +224,20 @@ for(i in muscles) {
 
     filter.appendChild(newLabel);
 }
+
+let selectAll = document.createElement("button");
+let deselectAll = document.createElement("button");
+let filterall = document.createElement("div");
+filterall.setAttribute("class", "filterall");
+selectAll.id = "selectAll";
+deselectAll.id = "deselectAll";
+selectAll.innerHTML = "Select all";
+deselectAll.innerHTML = "Deselect all";
+selectAll.addEventListener("click", changeAll);
+deselectAll.addEventListener("click", changeAll);
+filterall.appendChild(selectAll);
+filterall.appendChild(deselectAll);
+filter.appendChild(filterall)
 
 function updateList(e) {
     let id = e.id;

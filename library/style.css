@@ -29,9 +29,13 @@
     transform: scale(0.95);
 }
 #filter button {
-    background-color: #003761;
+    background-color: #4691A4;
+    border: none;
     margin: 5px;
     padding: 10px;
+    position: relative;
+    border-radius: 50px;
+    margin-top: 10px;
 }
 #exercises {
     margin: 5% 10% 5% 10%;

@@ -56,6 +56,7 @@ function createHeaderElements(){
     hamburger.append(line1,line2,line3);
   
     let nav_ul = document.createElement("ul");
+    nav_ul.style.zIndex = "90"
     nav_ul.setAttribute("id", "nav-ul");
     nav_ul.setAttribute("class","nav-ul");
     nav.appendChild(nav_ul);

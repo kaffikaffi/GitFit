@@ -107,9 +107,13 @@ function createTile(array) {
     array.forEach(element => {
       let tile = document.createElement("div");
       tile.setAttribute("class", "tile-style");
-      tile.setAttribute("href", element.src)
+      //tile.setAttribute("href", element.src)
       tile.style.cursor = "pointer";
-      tile.addEventListener("click", () => window.location.href = element.src);
+      //tile.addEventListener("click", () => window.location.href = element.src);
+      let a = document.createElement("a");
+      a.style.width = "100%";
+      a.style.height = "100%";
+      a.setAttribute("href",element.src);
 
       let image = document.createElement("img");
       image.setAttribute("class", "tile-image");
@@ -123,11 +127,12 @@ function createTile(array) {
       let hover_div = document.createElement("div");
       hover_div.style.width = "100%";
       hover_div.style.height = "100%";
-      hover_div.style.zIndex = "100";
+      hover_div.style.zIndex = "90";
       hover_div.setAttribute("class", "hover_div_style");
 
       tile.appendChild(image);
       tile.appendChild(icon);
+      hover_div.appendChild(a);
       tile.appendChild(hover_div);
 
       let display = document.createElement("h3");

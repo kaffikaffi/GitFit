@@ -214,6 +214,8 @@ let selectAll = document.createElement("button");
 let deselectAll = document.createElement("button");
 selectAll.id = "selectAll";
 deselectAll.id = "deselectAll";
+selectAll.innerHTML = "Select all";
+deselectAll.innerHTML = "Deselect all";
 selectAll.addEventListener("click", changeAll);
 deselectAll.addEventListener("click", changeAll);
 filter.appendChild(selectAll);

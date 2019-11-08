@@ -212,6 +212,8 @@ for(i in exercises) {
 let filter = document.getElementById("filter");
 let selectAll = document.createElement("button");
 let deselectAll = document.createElement("button");
+selectAll.id = "selectAll";
+deselectAll.id = "deselectAll";
 selectAll.addEventListener("click", changeAll);
 deselectAll.addEventListener("click", changeAll);
 filter.appendChild(selectAll);
@@ -257,10 +259,12 @@ function changeAll(e) {
     if(e.target.id == "selectAll") {
         for(i in muscles) {
             document.getElementById(i).checked = true;
+            updateList(document.getElementById(i));
         }
-    } else if(e.target.id == "deselctAll") {
+    } else if(e.target.id == "deselectAll") {
         for(i in muscles) {
             document.getElementById(i).checked = false;
+            updateList(document.getElementById(i));
         }
     }
 }

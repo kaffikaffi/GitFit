@@ -1,6 +1,6 @@
 #bmi_list {
 	margin:10px auto;
-	max-width: 400px;
+	width: 260px;
 	padding: 20px 12px 10px 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
@@ -51,6 +51,10 @@ ul input[type=submit]:hover{
 }
 #bmi_output, #bmi_output_def {
     font-size: 130%;
+    margin-top: 20px;
+}
+#submit_bmi {
+    margin-top: 30px;
 }
 table {
     width: 80%;

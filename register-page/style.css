@@ -59,14 +59,7 @@ ul input[type=submit]:hover{
 #message{
    resize: none;
 }
-
 .input_gender {
     margin: 5px;
     padding: 2px 4px;
-}
-
-h1 {
-	width: auto;
-	margin: auto;
-	margin-top: 100px;
 }

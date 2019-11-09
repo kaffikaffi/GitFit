@@ -15,22 +15,22 @@
     <div id="body">
         <main>
         <h1>Register</h1>
-        <form method="" onSubmit="alert('You have been registered!');"action="../main-page/index.html">
+        <form onSubmit="alert('You have been registered!');" action="../main-page/index.html">
             <ul id = "list">
                 <li>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" class="field-divided" placeholder="First Name" />
+                    <input type="text" name="name" class="field-divided" placeholder="First Name" id = "name"/>
                     <input type="text" name="name" class="field-divided" placeholder="Last Name" />
                 </li>
                 <li>
-                    <label for="age">Personal information</label>
+                    <label>Personal information</label>
                     <input type="number" name="age" id="age" class="field-divided" placeholder="Age">
-                    <input type="text" name="age" id="age" class="field-divided" placeholder="Adress">
+                    <input type="text" name="adress" id="adress" class="field-divided" placeholder="Adress">
 
                     <div class="field-divifed">
                         <label for="gender">Gender:</label>
                         <input type="radio" name="gender" id="gender" value="male" class="input_gender" />Male
-                        <input type="radio" name="gender" id="gender" value="female" class="input_gender" />Female
+                        <input type="radio" name="gender" id="gender2" value="female" class="input_gender" />Female
                     </div>
 
                 </li>
@@ -40,11 +40,11 @@
                 </li>
                 <li>
                     <label for="username">username</label>
-                    <input type="text" name="username" class="field-long" placeholder="Username" />
+                    <input type="text" name="username" class="field-long" placeholder="Username" id="username" />
                 </li>
                 <li>
                     <label for="password">Password</label>
-                    <input type="password" name="password" class="field-divided" placeholder="Password" />
+                    <input type="password" name="password" class="field-divided" placeholder="Password" id = "password"/>
                     <input type="password" name="password" class="field-divided" placeholder="Confrim Password" />
                 </li>
                 <li>

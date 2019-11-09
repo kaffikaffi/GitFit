@@ -30,10 +30,10 @@ function calculateBmi () {
         document.getElementById("bmi_output_def").innerHTML = "That makes you: Overweight";
     }
     else if (bmi > 100) {
-        document.getElementById("bmi_output_def").innerHTML = "That's pretty unrealistic, please check your input"
+        document.getElementById("bmi_output_def").innerHTML = "That can't be right, try again";
     }
     else {
-        document.getElementById("bmi_output_def").innerHTML = "That makes you: Obese;"
+        document.getElementById("bmi_output_def").innerHTML = "That makes you: Obese";
     }
     }
     

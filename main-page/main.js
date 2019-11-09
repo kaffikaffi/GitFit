@@ -1,5 +1,5 @@
 // Slideshow start //
-//By simply changing the arrays, you can change picture, text, and the source on the onclick by just changing these arrays.
+//Assigning images, text, alt and sources in arrays
 const images = [
   "../img/exampleimg1.jpg",
   "../img/exampleimg2.jpg",
@@ -39,25 +39,27 @@ const time = 7000;
 let prevImg = 0;
 let timeout;
 
-
+//Changes image to a given index
 function changeImg(index) {
+  //Make sure that slideshow is circular, not linear
   if(index >= images.length || index < 0) {
     index = images.length - Math.abs(index);
   }
-const slideimg = document.getElementById("slide_img");
+  const slideimg = document.getElementById("slide_img");
   slideimg.src = images[index];
   slideimg.alt = alt_tag[index]
   slideimg.addEventListener("click",()=>window.location.href = source[index]);
   document.getElementById("slide_caption").innerHTML = imagetext[index];
   document.getElementById(dots[prevImg]).style.backgroundColor = "white";
   document.getElementById(dots[index]).style.backgroundColor = "#007163";
-  
 
+  //Sets timeout to switch to next image
   prevImg = index;
   clearTimeout(timeout);
   timeout = setTimeout("changeImg(prevImg+1)", time);
 }
 
+//Initial image switch
 changeImg(0);
 //slideshow end //
 

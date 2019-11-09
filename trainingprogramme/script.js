@@ -1,3 +1,4 @@
+//Defining object conatinig exercises
 const exercises = {
     squat: {
         name: "Squat",
@@ -163,6 +164,7 @@ const exercises = {
     }
 };
 
+//Defining object containing muscles and prettified names
 const muscles = {
     calves:"Calves",
     quadriceps:"Quadriceps",
@@ -180,9 +182,10 @@ const muscles = {
     forearms:"Forearms"
 };
 
-//Brainfuck function
+//Assigns exercies given a number of days
 function assignExercises() {
     let nrOfDays = document.getElementById("days").value;
+    //Makes shure a valid number was pased
     if(nrOfDays < 1) {
         output.innerHTML = "No training for you, lazy ass bitch."
         return;
@@ -190,13 +193,14 @@ function assignExercises() {
         output.innerHTML = "Training more than seven days a week will create a black hole."
         return;
     }
-
+    //Define and create days and availableMuscles
     let days = {};   
     let availableMuscles = [];
     for(i in muscles) {
         availableMuscles.push(i);
     }
 
+    //If there can be more than 5 muscles on one day, remove muscles until it is not possible
     while(true) {
         if(Math.floor(availableMuscles.length/(nrOfDays)) > 5) {
             availableMuscles.splice(Math.floor(Math.random()*availableMuscles.length), 1); 
@@ -205,6 +209,7 @@ function assignExercises() {
         }
     }
 
+    //Adds an array of random muscles to all the days of days object
     for(let i=0; i<nrOfDays; i++) {
         let randomMuscles = [];
         let nrOfMuscles = Math.floor(availableMuscles.length/(nrOfDays-i));
@@ -217,6 +222,7 @@ function assignExercises() {
         days[i+1].muscles = randomMuscles;
     }
 
+    //Adds an array of exercises to all days based on what muscles that were assigned
     for(day in days) {
         let randomExercises = [];
         for(muscle of days[day]["muscles"]) {
@@ -226,6 +232,9 @@ function assignExercises() {
                 }
             }
         }
+        /*This loop removes exercises at random until a duplicate-free list has the desired length
+        Some exercises were chosen more than others due to beeing more popular. This ensures that more
+        popular exercises are less likely to be removed*/
         while(new Set(randomExercises).size > 10) {
             randomExercises.splice(Math.floor(Math.random()*randomExercises.length), 1);
         }

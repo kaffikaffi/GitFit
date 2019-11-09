@@ -240,12 +240,11 @@ nav{
         padding-left: 0;
         position: absolute;
         right: 0px;
-        height: 50vh; /*92vh*/
+        height: 50vh;
         top: 55px;
         background: #003761;
         display: flex;
         flex-direction: column;
-        align-items: left;
         width: 55%;
         transform: translateX(100%);
         transition-duration: 0.5s;
@@ -279,7 +278,6 @@ nav{
     }
     .logo{
         display: flex;
-        flex-direction: left;
     }
    #login-container{
         display: none;

@@ -162,6 +162,8 @@ function createHeaderElements(){
   /*nav end*/
 
   /* FOOTER */
+
+  // Function that renders footer with the appropriate html tags. 
 function renderFooter(){
     const bodyElement = document.getElementById("body");
     let footerElement = document.createElement("footer");
@@ -188,6 +190,7 @@ function renderFooter(){
     sectionSocial.setAttribute("class","footer_section");
     footerElement.appendChild(sectionSocial);
 
+    // Array with footer-logos
     const miniLogos = [
         "fa fa-instagram",
         "fa fa-twitter",
@@ -245,7 +248,7 @@ function renderFooter(){
 }
 
 renderFooter();
-
+// Function that checks if the user is in the calculator page, if so the links in the header will be modified with and extra "../" infront.
 function checkUrl(url1){
     let currentLocation = window.location.href;
     let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";

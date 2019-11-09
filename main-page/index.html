@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../src/header-footer.CSS">
+    <link rel="stylesheet" href="../src/header-footer.css">
     <title>GitFit</title>
 </head>
 
@@ -16,12 +16,12 @@
     <main>
         <section id="slideshow">
             <div id="slideshow_container">                   
-                <img name="slide" id="slide_img">
-                <h1 name="slide_text" id="slide_caption"></h1>
-                <img type="image" src="../img/leftarrow.svg" onclick="(changeImg(prevImg-1))" class="slide_btn" id="slide_btn_left">
-                <img type="image" src="../img/rightarrow.svg" onclick="(changeImg(prevImg+1))" class="slide_btn" id="slide_btn_right">
+                <img id="slide_img" alt="">
+                <h1 id="slide_caption"></h1>
+                <img src="../img/leftarrow.svg" onclick="(changeImg(prevImg-1))" class="slide_btn" id="slide_btn_left" alt="Arrow pointing left">
+                <img src="../img/rightarrow.svg" onclick="(changeImg(prevImg+1))" class="slide_btn" id="slide_btn_right" alt="Arrow pointing right">
                 <div id="slide_dots">
-                    <button onclick="(changeImg(0))" id="dot1" class="dotx"></button> <!-- Løse dette på en annen måte?-->
+                    <button onclick="(changeImg(0))" id="dot1" class="dotx"></button>
                     <button onclick="(changeImg(1))" id="dot2" class="dotx"></button>
                     <button onclick="(changeImg(2))" id="dot3" class="dotx"></button>
                     <button onclick="(changeImg(3))" id="dot4" class="dotx"></button>

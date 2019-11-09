@@ -54,7 +54,6 @@ changeImg(0);
 //slideshow end //
 
 //tile rendering start //
-// tile rendering // 
 const TILE_DIV = document.getElementById("tile-container");
 
 //Array of objects with properties that decides the content on the tile.
@@ -120,16 +119,17 @@ function createTile(array) {
       let tile = document.createElement("div");
       tile.setAttribute("class", "tile-style");
       tile.style.cursor = "pointer";
+
       let a = document.createElement("a");
       a.style.width = "100%";
       a.style.height = "100%";
       a.setAttribute("href",element.src);
-
+      //image is the background-image
       let image = document.createElement("img");
       image.setAttribute("class", "tile-image");
       image.setAttribute("src", element.img);
       image.setAttribute("alt", element.alt);
-
+      //icon is the visual 
       let icon = document.createElement("img");
       icon.setAttribute("class", "tile-icon");
       icon.setAttribute("src", element.icon);
@@ -140,16 +140,17 @@ function createTile(array) {
       hover_div.style.height = "100%";
       hover_div.style.zIndex = "90";
       hover_div.setAttribute("class", "hover_div_style");
-
+      //Display is the text on the tile.
+      let display = document.createElement("h3");
+      display.setAttribute("class", "tile-header");
+      display.textContent = element.display;
+      
       tile.appendChild(image);
       tile.appendChild(icon);
       hover_div.appendChild(a);
       tile.appendChild(hover_div);
-
-      let display = document.createElement("h3");
-      display.setAttribute("class", "tile-header");
-      display.textContent = element.display;
       tile.appendChild(display);
+      
       TILE_DIV.appendChild(tile);
 
       hover_div.addEventListener("mouseover", () =>{
@@ -163,8 +164,5 @@ function createTile(array) {
       
     });
   }
-
-
   createTile(tile_array);
-
 //tile rendering end

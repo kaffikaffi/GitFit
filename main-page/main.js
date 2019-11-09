@@ -64,43 +64,55 @@ let tile_array = [
     display: "Find the best tips",
     src: "../fitness/fitness.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/fitness.png"
+    alt: "Decorative background for tile",
+    icon: "../img/icons/fitness.png",
+    icon_alt: "two hands holding heart"
   },
   tile2 = {
     name: "calcualtors",
     display:"Calculate your goals",
     src: "../calculators/calculators.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/calculator.png"
+    alt: "Decorative background for tile",
+    icon: "../img/icons/calculator.png",
+    icon_alt: "Arrow hitting bulls-eye"
   },
   tile3 = {
     name: "library",
     display:"The best exercises",
     src: "../library/library.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/library.png"
+    alt: "Decorative background for tile",
+    icon: "../img/icons/library.png",
+    icon_alt: "Biceps with heart"
   },
   tile4= {
     name: "supplements",
     display:"What supplements to use",
     src: "../supplements/supplements.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/supplements.png"
+    alt: "Decorative background for tile",
+    icon: "../img/icons/supplements.png",
+    icon_alt: "Box and pills"
   },
   tile5 = {
     name: "program",
     display:"Generate program",
     src: "../trainingprogramme/trainingprogramme.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/program.png"
+    alt: "Decorative background for tile",
+    icon: "../img/icons/program.png",
+    icon_alt: "Mobile phone with heart"
   },
   tile6 = {
     name: "register",
     display:"Register now",
     src: "../register-page/register.html",
     img: "../img/gradient.png",
-    icon: "../img/icons/register.png"
-  }
+    alt: "Decorative background for tile",
+    icon: "../img/icons/register.png",
+    icon_alt: "A PC"
+    }
 ];
 //function that renders the tiles based on the properties in the object. 
 function createTile(array) {
@@ -116,11 +128,12 @@ function createTile(array) {
       let image = document.createElement("img");
       image.setAttribute("class", "tile-image");
       image.setAttribute("src", element.img);
+      image.setAttribute("alt", element.alt);
 
       let icon = document.createElement("img");
       icon.setAttribute("class", "tile-icon");
-      icon.setAttribute("src", element.icon);  
-
+      icon.setAttribute("src", element.icon);
+      icon.setAttribute("alt", element.icon_alt);
       //hover_div is a div on top of the tile to make hovering-actions easier to manage. 
       let hover_div = document.createElement("div");
       hover_div.style.width = "100%";

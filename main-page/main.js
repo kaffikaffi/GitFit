@@ -107,9 +107,7 @@ function createTile(array) {
     array.forEach(element => {
       let tile = document.createElement("div");
       tile.setAttribute("class", "tile-style");
-      //tile.setAttribute("href", element.src)
       tile.style.cursor = "pointer";
-      //tile.addEventListener("click", () => window.location.href = element.src);
       let a = document.createElement("a");
       a.style.width = "100%";
       a.style.height = "100%";

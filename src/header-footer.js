@@ -16,18 +16,6 @@ function createHeaderElements(){
     logo_div.setAttribute("class", "logo");
     
     let a = document.createElement("a");
-    /*
-    let currentLocation = window.location.href;
-      let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
-      let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
-      let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
-      let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
-      if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
-        a.setAttribute("href","../../main-page/index.html");} 
-      else{
-        a.setAttribute("href","../main-page/index.html");
-      }
-      */
      a.setAttribute("href",checkUrl("../main-page/index.html"));
 
     
@@ -121,19 +109,8 @@ function createHeaderElements(){
   
     createButton("Log in", "login_btn",LOGIN_DIV);
     createButton("Register", "register_btn", LOGIN_DIV);
-  /*
-    let currentLocation = window.location.href;
-    let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
-    let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
-    let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
-    let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
-      if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
-        document.getElementById("register_btn").addEventListener("click" , () => window.location.href = "../../register-page/register.html");      }
-      else{
-        document.getElementById("register_btn").addEventListener("click" , () => window.location.href = "../register-page/register.html");
-      }
-      */
-     document.getElementById("register_btn").addEventListener("click" , () => window.location.href = checkUrl("../register-page/register.html"));
+
+    document.getElementById("register_btn").addEventListener("click" , () => window.location.href = checkUrl("../register-page/register.html"));
 
  }
   
@@ -200,19 +177,7 @@ function renderFooter(){
     sectionContact.appendChild(divContact);
     let aTagContact = document.createElement("a");
     aTagContact.setAttribute("id","footer_contactlink");
-    /*** 
-    let currentLocation = window.location.href;
-    let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
-    let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
-    let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
-    let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
-      if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
-        aTagContact.setAttribute("href","../../contact-page/contact.html");
-      }
-      else{
-        aTagContact.setAttribute("href","../contact-page/contact.html");
-      }
-      */
+
     aTagContact.setAttribute("href",checkUrl("../contact-page/contact.html"));
     aTagContact.textContent = "Contact Us";
     divContact.appendChild(aTagContact)

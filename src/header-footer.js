@@ -284,7 +284,7 @@ renderFooter();
 function checkUrl(url1){
     let currentLocation = window.location.href;
     let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
-    let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
+    let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpulse/maxpulse.html";
     let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
     let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
 

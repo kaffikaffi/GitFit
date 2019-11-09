@@ -37,7 +37,6 @@ let tile_array = [
         tile.addEventListener("click",()=>window.location.href = element.src);
         tile.setAttribute("class", "tile-style");
         tile.setAttribute("href", element.src);
-        //tile.style.backgroundImage = "url(" + `${element.img}` + ")";
   
         let image = document.createElement("img");
         image.setAttribute("class", "tile-image");

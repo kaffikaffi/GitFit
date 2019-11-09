@@ -1,4 +1,3 @@
-
 // Slideshow start //
 const images = [
   "../img/exampleimg1.jpg",
@@ -6,6 +5,12 @@ const images = [
   "../img/exampleimg3.jpg",
   "../img/exampleimg4.jpg"
 ];
+const alt_tag = [
+  "Two women exercising",
+  "Dumbell rack",
+  "Group of people exercising",
+  "Man and woman stretching"
+]
 
 const imagetext = [
   "Find new Exercices",
@@ -32,13 +37,13 @@ const time = 6969;
 let prevImg = 0;
 let timeout;
 
-
 function changeImg(index) {
   if(index >= images.length || index < 0) {
     index = images.length - Math.abs(index);
   }
 const slideimg = document.getElementById("slide_img");
   slideimg.src = images[index];
+  slideimg.alt = alt_tag[index]
   slideimg.addEventListener("click",()=>window.location.href = source[index]);
   document.getElementById("slide_caption").innerHTML = imagetext[index];
   document.getElementById(dots[prevImg]).style.backgroundColor = "white";

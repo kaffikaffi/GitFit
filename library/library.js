@@ -1,3 +1,4 @@
+//Defining object containing exercises
 const exercises = {
     squat: {
         name: "Squat",
@@ -163,6 +164,7 @@ const exercises = {
     }
 };
 
+//Defining object containing muscles and prettified versions
 const muscles = {
     calves:"Calves",
     quadriceps:"Quadriceps",
@@ -181,7 +183,7 @@ const muscles = {
 };
 
 let unChecked = []
-
+//Create a div for each exercise containing title, video and description
 let exerciseList = document.getElementById("exercises");
 for(i in exercises) {
     let newVideo = document.createElement("video");
@@ -210,7 +212,7 @@ for(i in exercises) {
 }
 
 let filter = document.getElementById("filter");
-
+//Creating checkboxes for each muscle
 for(i in muscles) {
     let newCheckbox = document.createElement("input");
     newCheckbox.type = "checkbox";
@@ -225,6 +227,7 @@ for(i in muscles) {
     filter.appendChild(newLabel);
 }
 
+//Creating checkboxes for select and deselect all
 let selectAll = document.createElement("button");
 let deselectAll = document.createElement("button");
 let filterall = document.createElement("div");
@@ -242,6 +245,7 @@ filter.appendChild(filterall)
 function updateList(e) {
     let id = e.id;
     let checkbox = document.getElementById(id);
+    //If the checkbox is checked, it displays all exercises containig the muscles
     if(checkbox.checked) {
         checkbox.parentElement.style.backgroundColor = "#007163"
         unChecked.splice(unChecked.indexOf(id), 1);
@@ -250,7 +254,7 @@ function updateList(e) {
                 document.getElementById(i).style.display = "";
             }
         }
-    } else {
+    } else { //Else it removes all the exercises that don't have any muscles currently checked
         checkbox.parentElement.style.backgroundColor = "rgba(0,113,99,0.5)";
         unChecked.push(id);
         for(i in exercises) {
@@ -262,6 +266,7 @@ function updateList(e) {
     }
 }
 
+//Set checked attribute to true/false on all checkboxes
 function changeAll(e) {
     if(e.target.id == "selectAll") {
         for(i in muscles) {
@@ -276,6 +281,7 @@ function changeAll(e) {
     }
 }
 
+//Expand and play video
 function expandVideo(e) {
     let target = e.target;
     target.style.width = "200px";
@@ -283,6 +289,7 @@ function expandVideo(e) {
     target.play();
 }
 
+//Close and pause video
 function closeVideo(e) {
     let target = e.target;
     target.style.width = "100px";
@@ -290,6 +297,7 @@ function closeVideo(e) {
     target.pause();
 }
 
+//Check checkbox and add an onchange attribute to all muscles
 for(i in muscles) {
     document.getElementById(i).checked = true;
     document.getElementById(i).setAttribute("onchange", "updateList("+i+")");

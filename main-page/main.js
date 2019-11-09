@@ -1,5 +1,4 @@
 // Slideshow start //
-
 //Assigning images, text, alt and sources in arrays
 const images = [
   "../img/exampleimg1.jpg",
@@ -35,7 +34,8 @@ const source = [
   "../register-page/register.html",
 ];
 
-const time = 6969;
+//time in ms for the automatic slide change
+const time = 7000;
 let prevImg = 0;
 let timeout;
 

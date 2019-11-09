@@ -1,4 +1,5 @@
 // Slideshow start //
+//By simply changing the arrays, you can change picture, text, and the source on the onclick by just changing these arrays.
 const images = [
   "../img/exampleimg1.jpg",
   "../img/exampleimg2.jpg",
@@ -33,9 +34,11 @@ const source = [
   "../register-page/register.html",
 ];
 
-const time = 6969;
+//time in ms for the automatic slide change
+const time = 7000;
 let prevImg = 0;
 let timeout;
+
 
 function changeImg(index) {
   if(index >= images.length || index < 0) {

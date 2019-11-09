@@ -49,6 +49,7 @@ function changeImg(index) {
   slideimg.src = images[index];
   slideimg.alt = alt_tag[index];
   slideimg.addEventListener("click",()=>window.location.href = source[index]);
+  document.getElementById("slide_caption").addEventListener("click",()=>window.location.href = source[index]);
   slideimg.onload = function() { document.getElementById("slide_caption").innerHTML = imagetext[index];};
   document.getElementById(dots[prevImg]).style.backgroundColor = "white";
   document.getElementById(dots[index]).style.backgroundColor = "#007163";

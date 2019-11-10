@@ -247,8 +247,6 @@ nav{
         flex-direction: column;
         width: 55%;
         transform: translateX(100%);
-        transition: ease-in;
-        transition-duration: 0.3s;
     }
     .nav-ul-motion{
         transform: translateX(0%);

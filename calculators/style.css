@@ -19,10 +19,8 @@
     height: 100%;
     border-radius: 5px;
 }
-
 .tile-header{
     color: white;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.4em;
     padding: 10px;
     background-color: rgba(0,55,97,0.5);
@@ -44,7 +42,6 @@
     margin-left: 35%;
     position: relative;
 }
-
 #tiles{
     width: 60%;
     height: 100%;
@@ -76,5 +73,4 @@
         margin-top: -160px;
         
     }
-
 }

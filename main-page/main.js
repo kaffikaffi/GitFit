@@ -75,7 +75,7 @@ let tile_array = [
     src: "../fitness/fitness.html",
     img: "../img/gradient.png",
     alt: "Decorative background for tile",
-    icon: "../img/icons/fitness.png",
+    icon: "../img/tile-icon/fitness.png",
     icon_alt: "two hands holding heart"
   },
   tile2 = {
@@ -84,7 +84,7 @@ let tile_array = [
     src: "../calculators/calculators.html",
     img: "../img/gradient.png",
     alt: "Decorative background for tile",
-    icon: "../img/icons/calculator.png",
+    icon: "../img/tile-icon/calculator.png",
     icon_alt: "Arrow hitting bulls-eye"
   },
   tile3 = {
@@ -93,7 +93,7 @@ let tile_array = [
     src: "../library/library.html",
     img: "../img/gradient.png",
     alt: "Decorative background for tile",
-    icon: "../img/icons/library.png",
+    icon: "../img/tile-icon/library.png",
     icon_alt: "Biceps with heart"
   },
   tile4= {
@@ -102,7 +102,7 @@ let tile_array = [
     src: "../supplements/supplements.html",
     img: "../img/gradient.png",
     alt: "Decorative background for tile",
-    icon: "../img/icons/supplements.png",
+    icon: "../img/tile-icon/supplements.png",
     icon_alt: "Box and pills"
   },
   tile5 = {
@@ -111,7 +111,7 @@ let tile_array = [
     src: "../trainingprogramme/trainingprogramme.html",
     img: "../img/gradient.png",
     alt: "Decorative background for tile",
-    icon: "../img/icons/program.png",
+    icon: "../img/tile-icon/program.png",
     icon_alt: "Mobile phone with heart"
   },
   tile6 = {
@@ -120,7 +120,7 @@ let tile_array = [
     src: "../register-page/register.html",
     img: "../img/gradient.png",
     alt: "Decorative background for tile",
-    icon: "../img/icons/register.png",
+    icon: "../img/tile-icon/register.png",
     icon_alt: "A PC"
     }
 ];

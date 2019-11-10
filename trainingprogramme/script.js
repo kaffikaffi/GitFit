@@ -187,7 +187,7 @@ function assignExercises() {
     let nrOfDays = document.getElementById("days").value;
     //Makes shure a valid number was pased
     if(nrOfDays < 1) {
-        output.innerHTML = "No training for you, lazy ass bitch."
+        output.innerHTML = "Please enter a value between 1 and 7"
         return;
     } else if(nrOfDays > 7) {
         output.innerHTML = "Training more than seven days a week will create a black hole."

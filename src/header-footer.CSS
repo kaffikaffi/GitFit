@@ -218,7 +218,7 @@ nav{
 }
 
 /* BREAKPOINT */ 
-@media screen and (max-width: 822px) {
+@media screen and (max-width: 840px) {
     body{
         overflow-x: hidden; 
     } 

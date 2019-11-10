@@ -19,8 +19,8 @@
             <ul id = "list">
                 <li>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" class="field-divided" placeholder="First Name" id = "name"/>
-                    <input type="text" name="name" class="field-divided" placeholder="Last Name" />
+                    <input type="text" name="name" class="field-divided" placeholder="First Name" id = "name" required/>
+                    <input type="text" name="name" class="field-divided" placeholder="Last Name" required/>
                 </li>
                 <li>
                     <label>Personal information</label>
@@ -29,23 +29,23 @@
 
                     <div class="field-divifed">
                         <label for="gender">Gender:</label>
-                        <input type="radio" name="gender" id="gender" value="male" class="input_gender" />Male
+                        <input type="radio" name="gender" id="gender" value="male" class="input_gender" checked/>Male
                         <input type="radio" name="gender" id="gender2" value="female" class="input_gender" />Female
                     </div>
 
                 </li>
                 <li>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" class="field-long" placeholder="Email" />
+                    <input type="email" name="email" id="email" class="field-long" placeholder="Email" required/>
                 </li>
                 <li>
                     <label for="username">username</label>
-                    <input type="text" name="username" class="field-long" placeholder="Username" id="username" />
+                    <input type="text" name="username" class="field-long" placeholder="Username" id="username" required/>
                 </li>
                 <li>
                     <label for="password">Password</label>
-                    <input type="password" name="password" class="field-divided" placeholder="Password" id = "password"/>
-                    <input type="password" name="password" class="field-divided" placeholder="Confrim Password" />
+                    <input type="password" name="password" class="field-divided" placeholder="Password" id = "password" required/>
+                    <input type="password" name="password" class="field-divided" placeholder="Confrim Password" required/>
                 </li>
                 <li>
                     <input type="submit" value="Submit" />

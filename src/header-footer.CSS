@@ -218,7 +218,7 @@ nav{
 }
 
 /* BREAKPOINT */ 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 890px) {
     body{
         overflow-x: hidden; 
     } 
@@ -247,7 +247,6 @@ nav{
         flex-direction: column;
         width: 55%;
         transform: translateX(100%);
-        transition-duration: 0.5s;
     }
     .nav-ul-motion{
         transform: translateX(0%);

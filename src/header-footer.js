@@ -88,18 +88,7 @@ function createHeaderElements(){
       let a = document.createElement("a");
       a.setAttribute("class","header-links");
       a.textContent = element;
-      
-      let currentLocation = window.location.href;
-      let fixedUrl ="http://folk.ntnu.no/trygveam/project/fp/calculators/rm/rm.html";
-      let fixedUrl2 ="http://folk.ntnu.no/trygveam/project/fp/calculators/maxpuls/maxpuls.html";
-      let fixedUrl3 = "http://folk.ntnu.no/trygveam/project/fp/calculators/calorie/calorie.html";
-      let fixedUrl4 = "http://folk.ntnu.no/trygveam/project/fp/calculators/bmi/bmi.html";
-      if(currentLocation == fixedUrl || currentLocation == fixedUrl2 || currentLocation == fixedUrl3 || currentLocation == fixedUrl4){
-        a.setAttribute("href", "../../"+element.toLowerCase() + "/"+ element.toLowerCase() + ".html");
-      }
-      else{
-        a.setAttribute("href", "../"+element.toLowerCase() + "/"+ element.toLowerCase() + ".html");
-      }
+      a.setAttribute("href", checkUrl("../")+element.toLowerCase() + "/"+ element.toLowerCase() + ".html");
       li.appendChild(a);
       ul.appendChild(li);
     });

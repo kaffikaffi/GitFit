@@ -137,7 +137,6 @@
 }
 .tile-header{
     color: hsl(206, 100% ,95%); 
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.8em;
     padding: 10px;
     background-color: rgba(0,55,97,0.3);
